@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AryaServicesAlpha" Class="AryaServicesDbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=dev.empirisense.com;Initial Catalog=AryaServices;Persist Security Info=True;User ID=aryaUser;MultipleActiveResultSets=True" SettingsObjectName="Arya.Framework.Properties.Settings" SettingsPropertyName="AryaServicesAlphaConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AryaSchedule" Member="AryaSchedules">
+    <Type Name="AryaSchedule">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="ArgumentDirectoryPath" Type="System.String" DbType="VarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="SubmittedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SubmittedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Interval" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NextExecution" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastExecution" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EmailTo" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="JobType" Type="System.String" DbType="VarChar(4000) NOT NULL" CanBeNull="false" />
+      <Association Name="AryaSchedule_AryaTask" Member="AryaTasks" ThisKey="ID" OtherKey="ScheduleID" Type="AryaTask" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AryaTask" Member="AryaTasks">
+    <Type Name="AryaTask">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ScheduleID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="ArgumentDirectoryPath" Type="System.String" DbType="VarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StatusMessage" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="SubmittedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SubmittedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdateOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="JobType" Type="System.String" DbType="VarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="JobAssignedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="AryaSchedule_AryaTask" Member="AryaSchedule" ThisKey="ScheduleID" OtherKey="ID" Type="AryaSchedule" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

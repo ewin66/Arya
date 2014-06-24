@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{712880BC-F026-4F35-89CE-D4FC0AF6304B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arya.Framework</RootNamespace>
+    <AssemblyName>Arya.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestBuild|AnyCPU'">
+    <OutputPath>bin\TestBuild\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalBuild|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\LocalBuild\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestBuild|x64'">
+    <OutputPath>bin\x64\TestBuild\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalBuild|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\LocalBuild\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestBuild|x86'">
+    <OutputPath>bin\x86\TestBuild\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalBuild|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\LocalBuild\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.3.1.3.3\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Fasterflect, Version=2.1.3.0, Culture=neutral, PublicKeyToken=38d18473284c1ca7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\fasterflect.2.1.3\lib\net40\Fasterflect.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeHandFilters">
+      <HintPath>..\Arya\Libraries\FreeHandFilters.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\packages\LinqKit.1.0\lib\35\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqLib">
+      <HintPath>..\packages\LinqExtLibrary.1.0.4.2\lib\LinqLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <HintPath>..\packages\ncalc.1.3.8\lib\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="NHunspell">
+      <HintPath>..\packages\NHunspell.1.1.1\lib\net\NHunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="Polenter.SharpSerializer">
+      <HintPath>..\packages\SharpSerializer.2.18\lib\net20\Polenter.SharpSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\CacheLayer.cs" />
+    <Compile Include="Collections\Concurrent\ConcurrentDoubleKeyDictonary.cs" />
+    <Compile Include="Collections\Generic\CompareForAlphaNumericSort.cs" />
+    <Compile Include="Collections\Generic\DoubleKeyDictonary.cs" />
+    <Compile Include="Collections\Generic\DoubleKeyPairValue.cs" />
+    <Compile Include="Data\CrossListCriteria.cs" />
+    <Compile Include="Data\AryaDb\Attribute.cs" />
+    <Compile Include="Data\AryaDb\AttributeGroup.cs" />
+    <Compile Include="Data\AryaDb\AttributeMetaData.cs" />
+    <Compile Include="Data\AryaDb\AttributeMetaInfo.cs" />
+    <Compile Include="Data\AryaDb\BaseEntity.cs" />
+    <Compile Include="Data\AryaDb\ContextManager.cs" />
+    <Compile Include="Data\AryaDb\Checkpoint.cs" />
+    <Compile Include="Data\AryaDb\DerivedAttribute.cs" />
+    <Compile Include="Data\AryaDb\DerivedEntityData.cs" />
+    <Compile Include="Data\AryaDb\DerivedTaxonomy.cs" />
+    <Compile Include="Data\AryaDb\EntityData.cs" />
+    <Compile Include="Data\AryaDb\EntityInfo.cs" />
+    <Compile Include="Data\AryaDb\Group.cs" />
+    <Compile Include="Data\AryaDb\GroupNote.cs" />
+    <Compile Include="Data\ITempTable.cs" />
+    <Compile Include="Data\AryaDb\ListOfValue.cs" />
+    <Compile Include="Data\AryaDb\AryaDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AryaDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\AryaDb\AryaDb.cs" />
+    <Compile Include="Data\AryaDb\Project.cs" />
+    <Compile Include="Data\AryaDb\Role.cs" />
+    <Compile Include="Data\AryaDb\SchemaAttribute.cs" />
+    <Compile Include="Data\AryaDb\SchemaData.cs" />
+    <Compile Include="Data\AryaDb\SchemaInfo.cs" />
+    <Compile Include="Data\AryaDb\SchemaMetaData.cs" />
+    <Compile Include="Data\AryaDb\SchemaMetaInfo.cs" />
+    <Compile Include="Data\AryaDb\Sku.cs" />
+    <Compile Include="Data\AryaDb\SkuGroup.cs" />
+    <Compile Include="Data\AryaDb\SkuInfo.cs" />
+    <Compile Include="Data\AryaDb\SkuLink.cs" />
+    <Compile Include="Data\AryaDb\UnitOfMeasure.cs" />
+    <Compile Include="Data\Query.cs" />
+    <Compile Include="Data\Services\AryaServices.cs" />
+    <Compile Include="Data\Services\AryaServicesDb.designer.cs">
+      <DependentUpon>AryaServicesDb.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Data\SqlHelper.cs" />
+    <Compile Include="Data\TaxAttributeValueCalculator.cs" />
+    <Compile Include="Data\AryaDb\TaxonomyData.cs" />
+    <Compile Include="Data\AryaDb\TaxonomyInfo.cs" />
+    <Compile Include="Data\AryaDb\TaxonomyMetaData.cs" />
+    <Compile Include="Data\AryaDb\TaxonomyMetaInfo.cs" />
+    <Compile Include="Data\AryaDb\UIObject.cs" />
+    <Compile Include="Data\AryaDb\User.cs" />
+    <Compile Include="Data\AryaDb\UserProject.cs" />
+    <Compile Include="Data\Validate.cs" />
+    <Compile Include="Extensions\ImageManager.cs" />
+    <Compile Include="Extensions\AryaDataContextExtensions.cs" />
+    <Compile Include="GUI\Forms\FilterTextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\FilterTextEditor.Designer.cs">
+      <DependentUpon>FilterTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Forms\ImportFieldMapper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Forms\ImportFieldMapper.Designer.cs">
+      <DependentUpon>ImportFieldMapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TypeEditors\EmptyEditor.cs" />
+    <Compile Include="GUI\TypeEditors\ImportFieldEditor.cs" />
+    <Compile Include="GUI\TypeEditors\SaveFileNameEditor.cs" />
+    <Compile Include="GUI\TypeEditors\TaxonomyEditor.cs" />
+    <Compile Include="GUI\UserControls\CheckedImageListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\CheckedImageListBox.Designer.cs">
+      <DependentUpon>CheckedImageListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControls\CustomDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\DataGridViewImageCheckBoxCell.cs" />
+    <Compile Include="GUI\UserControls\DataGridViewImageCheckBoxColumn.cs" />
+    <Compile Include="GUI\UserControls\DataGridViewRichTextBoxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\DataGridViewTextAndImageCell.cs" />
+    <Compile Include="GUI\UserControls\DataGridViewTextAndImageColumn.cs" />
+    <Compile Include="GUI\UserControls\LabelWithComboToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\MultiSelectTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\RichTextBoxPrinter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\BaseUnitConversion.cs" />
+    <Compile Include="Utility\EmailSender.cs" />
+    <Compile Include="Utility\EnumerableTextReader.cs" />
+    <Compile Include="Utility\FileHelper.cs" />
+    <Compile Include="Utility\Ftp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\AryaData.cs" />
+    <Compile Include="Settings\ProjectPreferences.cs" />
+    <Compile Include="Settings\WorkFlow.cs" />
+    <Compile Include="Utility\LineData.cs" />
+    <Compile Include="Utility\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Services\AryaServicesDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AryaServicesDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dictionary\en_GB.aff" />
+    <None Include="Dictionary\en_GB.dic" />
+    <None Include="Dictionary\en_US.aff" />
+    <None Include="Dictionary\en_US.dic" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\en_GB.aff" />
+    <None Include="Resources\en_GB.dic" />
+    <None Include="Resources\en_US.aff" />
+    <None Include="Resources\en_US.dic" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\AryaDb\AryaDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AryaDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Data\AryaDb\AryaDb.dbml.layout">
+      <DependentUpon>AryaDb.dbml</DependentUpon>
+    </None>
+    <None Include="Data\Services\AryaServicesDb.dbml.layout">
+      <DependentUpon>AryaServicesDb.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="GUI\Forms\FilterTextEditor.resx">
+      <DependentUpon>FilterTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Forms\ImportFieldMapper.resx">
+      <DependentUpon>ImportFieldMapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControls\CustomDataGridView.resx">
+      <DependentUpon>CustomDataGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControls\MultiSelectTreeView.resx">
+      <DependentUpon>MultiSelectTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arya.Framework.Common\Arya.Framework.Common.csproj">
+      <Project>{ff8d2d4e-9dd8-4d99-ad46-89031ac0d0e2}</Project>
+      <Name>Arya.Framework.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /y "$(SolutionDir)packages\NHunspell.1.1.1\native\*.*" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

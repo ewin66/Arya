@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Natalie3" Class="SkuDataDbDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=natalie.bytemanagers.com;Initial Catalog=Natalie3;Persist Security Info=True;User ID=vivek" SettingsObjectName="Natalie.Properties.Settings" SettingsPropertyName="Natalie3ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Attribute" Member="Attributes">
+    <Type Name="Attribute">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="AttributeType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AttributeName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="AttributeGroup" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="HasUom" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Readonly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Attribute_ColumnProperty" Member="ColumnProperties" ThisKey="ID" OtherKey="AttributeID" Type="ColumnProperty" />
+      <Association Name="Attribute_DerivedAttribute" Member="DerivedAttributes" ThisKey="ID" OtherKey="AttributeID" Type="DerivedAttribute" />
+      <Association Name="Attribute_EntityData" Member="EntityDatas" ThisKey="ID" OtherKey="AttributeID" Type="EntityData" />
+      <Association Name="Attribute_SchemaInfo" Member="SchemaInfos" ThisKey="ID" OtherKey="AttributeID" Type="SchemaInfo" />
+      <Association Name="Attribute_SchemaMetaInfo" Member="SchemaMetaInfos" ThisKey="ID" OtherKey="SchemaAttributeID" Type="SchemaMetaInfo" />
+      <Association Name="Attribute_TaxonomyAttribute" Member="TaxonomyAttributes" ThisKey="ID" OtherKey="AttributeID" Type="TaxonomyAttribute" />
+      <Association Name="Project_Attribute" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_Attribute" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Checkpoint]" Member="Checkpoints">
+    <Type Name="Checkpoint">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(8000) NOT NULL" CanBeNull="false" />
+      <Association Name="Project_Checkpoint" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ColumnProperty" Member="ColumnProperties">
+    <Type Name="ColumnProperty">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="AttributeID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnWidth" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Visible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Attribute_ColumnProperty" Member="Attribute" ThisKey="AttributeID" OtherKey="ID" Type="Attribute" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TaxonomyInfo_ColumnProperty" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" />
+      <Association Name="User_ColumnProperty" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DerivedAttribute" Member="DerivedAttributes">
+    <Type Name="DerivedAttribute">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AttributeID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Expression" Type="System.String" DbType="VarChar(8000) NOT NULL" CanBeNull="false" />
+      <Column Name="MaxResultLength" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Attribute_DerivedAttribute" Member="Attribute" ThisKey="AttributeID" OtherKey="ID" Type="Attribute" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TaxonomyInfo_DerivedAttribute" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DerivedTaxonomy" Member="DerivedTaxonomies">
+    <Type Name="DerivedTaxonomy">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Expression" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="TaxonomyInfo_DerivedTaxonomy" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EntityData" Member="EntityDatas">
+    <Type Name="EntityData">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EntityID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="AttributeID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="Uom" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Field1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Field2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Field3" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Field4" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Field5" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeletedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BeforeEntity" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="BaseValue" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Association Name="EntityData_EntityDataNote" Member="EntityDataNotes" ThisKey="ID" OtherKey="EntityDataID" Type="EntityDataNote" />
+      <Association Name="Attribute_EntityData" Member="Attribute" ThisKey="AttributeID" OtherKey="ID" Type="Attribute" IsForeignKey="true" />
+      <Association Name="EntityInfo_EntityData" Member="EntityInfo" ThisKey="EntityID" OtherKey="ID" Type="EntityInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Remark_EntityData" Member="Remark" ThisKey="CreatedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="Remark_EntityData1" Member="Remark1" ThisKey="DeletedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="User_EntityData" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="User_EntityData1" Member="User1" ThisKey="DeletedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EntityDataNotes" Member="EntityDataNotes">
+    <Type Name="EntityDataNote">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EntityDataID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="EntityData_EntityDataNote" Member="EntityData" ThisKey="EntityDataID" OtherKey="ID" Type="EntityData" IsForeignKey="true" />
+      <Association Name="User_EntityDataNote" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EntityInfo" Member="EntityInfos">
+    <Type Name="EntityInfo">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SkuID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="EntityInfo_EntityData" Member="EntityDatas" ThisKey="ID" OtherKey="EntityID" Type="EntityData" />
+      <Association Name="Sku_EntityInfo" Member="Sku" ThisKey="SkuID" OtherKey="ID" Type="Sku" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Group]" Member="Groups">
+    <Type Name="Group">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ClientName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GroupType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Criterion" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Group_GroupNote" Member="GroupNotes" ThisKey="ID" OtherKey="GroupID" Type="GroupNote" />
+      <Association Name="Group_Role" Member="Roles" ThisKey="ID" OtherKey="GroupID" Type="Role" />
+      <Association Name="Group_SkuGroup" Member="SkuGroups" ThisKey="ID" OtherKey="GroupID" Type="SkuGroup" />
+      <Association Name="Group_SkuGroupData" Member="SkuGroupDatas" ThisKey="ID" OtherKey="GroupID" Type="SkuGroupData" />
+      <Association Name="Group_UserProject" Member="UserProjects" ThisKey="ID" OtherKey="GroupID" Type="UserProject" />
+      <Association Name="Group_SkuState" Member="SkuStates" ThisKey="ID" OtherKey="UserGroupID" Type="SkuState" />
+      <Association Name="Group_SkuState1" Member="SkuStates1" ThisKey="ID" OtherKey="SkuGroupID" Type="SkuState" />
+      <Association Name="Group_State" Member="States" ThisKey="ID" OtherKey="UserGroupID" Type="State" />
+      <Association Name="Group_Workflow" Member="Workflows" ThisKey="ID" OtherKey="SkuGroupID" Type="Workflow" />
+      <Association Name="User_Group" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GroupNotes" Member="GroupNotes">
+    <Type Name="GroupNote">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Group_GroupNote" Member="Group" ThisKey="GroupID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+      <Association Name="User_GroupNote" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ListOfValues" Member="ListOfValues">
+    <Type Name="ListOfValue">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SchemaID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="ParentValue" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayOrder" Type="System.Int32" DbType="int" CanBeNull="true" />
+      <Column Name="EnrichmentImage" Type="System.String" DbType="nvarchar(4000)" CanBeNull="true" />
+      <Column Name="EnrichmentCopy" Type="System.String" DbType="nvarchar(4000)" CanBeNull="true" />
+      <Association Name="SchemaInfo_ListOfValue" Member="SchemaInfo" ThisKey="SchemaID" OtherKey="ID" Type="SchemaInfo" IsForeignKey="true" />
+      <Association Name="User_ListOfValue" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="User_ListOfValue1" Member="User1" ThisKey="DeletedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Project" Member="Projects">
+    <Type Name="Project">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DatabaseName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ProjectName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ClientDescription" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="SetName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="EntityField1Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="EntityField1Readonly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityField2Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="EntityField2Readonly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityField3Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="EntityField3Readonly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityField4Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="EntityField4Readonly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityField5Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="EntityField5Readonly" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EntityField5IsStatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ImageUrlString" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="ProductSearchString" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="SchemaFillRateFilters" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Preferences" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Project_Attribute" Member="Attributes" ThisKey="ID" OtherKey="ProjectID" Type="Attribute" />
+      <Association Name="Project_Checkpoint" Member="Checkpoints" ThisKey="ID" OtherKey="ProjectID" Type="Checkpoint" />
+      <Association Name="Project_ProjectUom" Member="ProjectUoms" ThisKey="ID" OtherKey="ProjectID" Type="ProjectUom" />
+      <Association Name="Project_TaxonomyInfo" Member="TaxonomyInfos" ThisKey="ID" OtherKey="ProjectID" Type="TaxonomyInfo" />
+      <Association Name="Project_UserProject" Member="UserProjects" ThisKey="ID" OtherKey="ProjectID" Type="UserProject" />
+      <Association Name="Project_Workflow" Member="Workflows" ThisKey="ID" OtherKey="ProjectID" Type="Workflow" />
+      <Association Name="Project_CheckPointInfo" Member="CheckPointInfos" ThisKey="ID" OtherKey="ProjectID" Type="CheckPointInfo" />
+      <Association Name="Project_Sku" Member="Skus" ThisKey="ID" OtherKey="ProjectID" Type="Sku" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProjectUom" Member="ProjectUoms">
+    <Type Name="ProjectUom">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UomID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Uom" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Project_ProjectUom" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+      <Association Name="UnitOfMeasure_ProjectUom" Member="UnitOfMeasure" ThisKey="UomID" OtherKey="ID" Type="UnitOfMeasure" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Remark" Member="Remarks">
+    <Type Name="Remark">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Remark" Member="Remark1" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="IsCanned" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Remark_EntityData" Member="EntityDatas" ThisKey="ID" OtherKey="CreatedRemark" Type="EntityData" />
+      <Association Name="Remark_EntityData1" Member="EntityDatas1" ThisKey="ID" OtherKey="DeletedRemark" Type="EntityData" />
+      <Association Name="Remark_SchemaData" Member="SchemaDatas" ThisKey="ID" OtherKey="CreatedRemark" Type="SchemaData" />
+      <Association Name="Remark_SchemaData1" Member="SchemaDatas1" ThisKey="ID" OtherKey="DeletedRemark" Type="SchemaData" />
+      <Association Name="Remark_SchemaMetaData" Member="SchemaMetaDatas" ThisKey="ID" OtherKey="CreatedRemark" Type="SchemaMetaData" />
+      <Association Name="Remark_SchemaMetaData1" Member="SchemaMetaDatas1" ThisKey="ID" OtherKey="DeletedRemark" Type="SchemaMetaData" />
+      <Association Name="Remark_SkuInfo" Member="SkuInfos" ThisKey="ID" OtherKey="CreatedRemark" Type="SkuInfo" />
+      <Association Name="Remark_TaxonomyData" Member="TaxonomyDatas" ThisKey="ID" OtherKey="CreatedRemark" Type="TaxonomyData" />
+      <Association Name="Remark_TaxonomyData1" Member="TaxonomyDatas1" ThisKey="ID" OtherKey="DeletedRemark" Type="TaxonomyData" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Role" Member="Roles">
+    <Type Name="Role">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Permission" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ObjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ObjectType" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Group_Role" Member="Group" ThisKey="GroupID" OtherKey="ID" Type="Group" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SchemaData" Member="SchemaDatas">
+    <Type Name="SchemaData">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SchemaID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="InSchema" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DataType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NavigationOrder" Type="System.Decimal" DbType="Decimal(6,3) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayOrder" Type="System.Decimal" DbType="Decimal(6,3) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeletedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Remark_SchemaData" Member="Remark" ThisKey="CreatedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="Remark_SchemaData1" Member="Remark1" ThisKey="DeletedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="SchemaInfo_SchemaData" Member="SchemaInfo" ThisKey="SchemaID" OtherKey="ID" Type="SchemaInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_SchemaData" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="User_SchemaData1" Member="User1" ThisKey="DeletedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SchemaInfo" Member="SchemaInfos">
+    <Type Name="SchemaInfo">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="AttributeID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="SchemaInfo_ListOfValue" Member="ListOfValues" ThisKey="ID" OtherKey="SchemaID" Type="ListOfValue" />
+      <Association Name="SchemaInfo_SchemaData" Member="SchemaDatas" ThisKey="ID" OtherKey="SchemaID" Type="SchemaData" />
+      <Association Name="SchemaInfo_SchemaMetaInfo" Member="SchemaMetaInfos" ThisKey="ID" OtherKey="SchemaID" Type="SchemaMetaInfo" />
+      <Association Name="SchemaInfo_SchemaNote" Member="SchemaNotes" ThisKey="ID" OtherKey="SchemaInfoID" Type="SchemaNote" />
+      <Association Name="Attribute_SchemaInfo" Member="Attribute" ThisKey="AttributeID" OtherKey="ID" Type="Attribute" IsForeignKey="true" />
+      <Association Name="TaxonomyInfo_SchemaInfo" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SchemaMetaData" Member="SchemaMetaDatas">
+    <Type Name="SchemaMetaData">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MetaID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeletedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Remark_SchemaMetaData" Member="Remark" ThisKey="CreatedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="Remark_SchemaMetaData1" Member="Remark1" ThisKey="DeletedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="SchemaMetaInfo_SchemaMetaData" Member="SchemaMetaInfo" ThisKey="MetaID" OtherKey="ID" Type="SchemaMetaInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_SchemaMetaData" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="User_SchemaMetaData1" Member="User1" ThisKey="DeletedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SchemaMetaInfo" Member="SchemaMetaInfos">
+    <Type Name="SchemaMetaInfo">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SchemaID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SchemaAttributeID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="SchemaMetaInfo_SchemaMetaData" Member="SchemaMetaDatas" ThisKey="ID" OtherKey="MetaID" Type="SchemaMetaData" />
+      <Association Name="Attribute_SchemaMetaInfo" Member="Attribute" ThisKey="SchemaAttributeID" OtherKey="ID" Type="Attribute" IsForeignKey="true" />
+      <Association Name="SchemaInfo_SchemaMetaInfo" Member="SchemaInfo" ThisKey="SchemaID" OtherKey="ID" Type="SchemaInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SchemaNotes" Member="SchemaNotes">
+    <Type Name="SchemaNote">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SchemaInfoID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="SchemaInfo_SchemaNote" Member="SchemaInfo" ThisKey="SchemaInfoID" OtherKey="ID" Type="SchemaInfo" IsForeignKey="true" />
+      <Association Name="User_SchemaNote" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SkuGroup" Member="SkuGroups">
+    <Type Name="SkuGroup">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SkuID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Group_SkuGroup" Member="Group" ThisKey="GroupID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+      <Association Name="Sku_SkuGroup" Member="Sku" ThisKey="SkuID" OtherKey="ID" Type="Sku" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SkuGroupData" Member="SkuGroupDatas">
+    <Type Name="SkuGroupData">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Group_SkuGroupData" Member="Group" ThisKey="GroupID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+      <Association Name="User_SkuGroupData" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SkuInfo" Member="SkuInfos">
+    <Type Name="SkuInfo">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SkuID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Remark_SkuInfo" Member="Remark" ThisKey="CreatedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="TaxonomyInfo_SkuInfo" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" />
+      <Association Name="User_SkuInfo" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="Sku_SkuInfo" Member="Sku" ThisKey="SkuID" OtherKey="ID" Type="Sku" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SkuLink" Member="SkuLinks">
+    <Type Name="SkuLink">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FromSku" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ToSku" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LinkType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="User_SkuLink" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="User_SkuLink1" Member="User1" ThisKey="DeletedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="Sku_SkuLink" Member="Sku" ThisKey="FromSku" OtherKey="ID" Type="Sku" IsForeignKey="true" />
+      <Association Name="Sku_SkuLink1" Member="Sku1" ThisKey="ToSku" OtherKey="ID" Type="Sku" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaxonomyAttribute" Member="TaxonomyAttributes">
+    <Type Name="TaxonomyAttribute">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AttributeID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="NavigationalOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FillRate" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Association Name="Attribute_TaxonomyAttribute" Member="Attribute" ThisKey="AttributeID" OtherKey="ID" Type="Attribute" IsForeignKey="true" />
+      <Association Name="TaxonomyInfo_TaxonomyAttribute" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaxonomyData" Member="TaxonomyDatas">
+    <Type Name="TaxonomyData">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ParentTaxonomyID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="NodeName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NodeDescription" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DeletedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeletedRemark" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="EnrichmentImage" Type="System.String" DbType="nvarchar(4000)" CanBeNull="true" />
+      <Column Name="EnrichmentCopy" Type="System.String" DbType="nvarchar(4000)" CanBeNull="true" />
+      <Association Name="Remark_TaxonomyData" Member="Remark" ThisKey="CreatedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="Remark_TaxonomyData1" Member="Remark1" ThisKey="DeletedRemark" OtherKey="ID" Type="Remark" IsForeignKey="true" />
+      <Association Name="TaxonomyInfo_TaxonomyData" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TaxonomyInfo_TaxonomyData1" Member="TaxonomyInfo1" ThisKey="ParentTaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" />
+      <Association Name="User_TaxonomyData" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="User_TaxonomyData1" Member="User1" ThisKey="DeletedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaxonomyInfo" Member="TaxonomyInfos">
+    <Type Name="TaxonomyInfo">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ShowInTree" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NodeType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TaxonomyInfo_ColumnProperty" Member="ColumnProperties" ThisKey="ID" OtherKey="TaxonomyID" Type="ColumnProperty" />
+      <Association Name="TaxonomyInfo_DerivedAttribute" Member="DerivedAttributes" ThisKey="ID" OtherKey="TaxonomyID" Type="DerivedAttribute" />
+      <Association Name="TaxonomyInfo_DerivedTaxonomy" Member="DerivedTaxonomies" ThisKey="ID" OtherKey="TaxonomyID" Type="DerivedTaxonomy" />
+      <Association Name="TaxonomyInfo_SchemaInfo" Member="SchemaInfos" ThisKey="ID" OtherKey="TaxonomyID" Type="SchemaInfo" />
+      <Association Name="TaxonomyInfo_SkuInfo" Member="SkuInfos" ThisKey="ID" OtherKey="TaxonomyID" Type="SkuInfo" />
+      <Association Name="TaxonomyInfo_TaxonomyAttribute" Member="TaxonomyAttributes" ThisKey="ID" OtherKey="TaxonomyID" Type="TaxonomyAttribute" />
+      <Association Name="TaxonomyInfo_TaxonomyData" Member="TaxonomyDatas" ThisKey="ID" OtherKey="TaxonomyID" Type="TaxonomyData" />
+      <Association Name="TaxonomyInfo_TaxonomyData1" Member="TaxonomyDatas1" ThisKey="ID" OtherKey="ParentTaxonomyID" Type="TaxonomyData" />
+      <Association Name="TaxonomyInfo_TaxonomyNote" Member="TaxonomyNotes" ThisKey="ID" OtherKey="TaxonomyID" Type="TaxonomyNote" />
+      <Association Name="Project_TaxonomyInfo" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaxonomyNotes" Member="TaxonomyNotes">
+    <Type Name="TaxonomyNote">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaxonomyID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="TaxonomyString" Type="System.String" DbType="NVarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="TaxonomyInfo_TaxonomyNote" Member="TaxonomyInfo" ThisKey="TaxonomyID" OtherKey="ID" Type="TaxonomyInfo" IsForeignKey="true" />
+      <Association Name="User_TaxonomyNote" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UIObject" Member="UIObjects">
+    <Type Name="UIObject">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SingleSignOnId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="OpenIdentity" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="User_Attribute" Member="Attributes" ThisKey="ID" OtherKey="CreatedBy" Type="Attribute" />
+      <Association Name="User_ColumnProperty" Member="ColumnProperties" ThisKey="ID" OtherKey="UserID" Type="ColumnProperty" />
+      <Association Name="User_EntityData" Member="EntityDatas" ThisKey="ID" OtherKey="CreatedBy" Type="EntityData" />
+      <Association Name="User_EntityData1" Member="EntityDatas1" ThisKey="ID" OtherKey="DeletedBy" Type="EntityData" />
+      <Association Name="User_EntityDataNote" Member="EntityDataNotes" ThisKey="ID" OtherKey="CreatedBy" Type="EntityDataNote" />
+      <Association Name="User_Group" Member="Groups" ThisKey="ID" OtherKey="CreatedBy" Type="Group" />
+      <Association Name="User_GroupNote" Member="GroupNotes" ThisKey="ID" OtherKey="CreatedBy" Type="GroupNote" />
+      <Association Name="User_ListOfValue" Member="ListOfValues" ThisKey="ID" OtherKey="CreatedBy" Type="ListOfValue" />
+      <Association Name="User_ListOfValue1" Member="ListOfValues1" ThisKey="ID" OtherKey="DeletedBy" Type="ListOfValue" />
+      <Association Name="User_SchemaData" Member="SchemaDatas" ThisKey="ID" OtherKey="CreatedBy" Type="SchemaData" />
+      <Association Name="User_SchemaData1" Member="SchemaDatas1" ThisKey="ID" OtherKey="DeletedBy" Type="SchemaData" />
+      <Association Name="User_SchemaMetaData" Member="SchemaMetaDatas" ThisKey="ID" OtherKey="CreatedBy" Type="SchemaMetaData" />
+      <Association Name="User_SchemaMetaData1" Member="SchemaMetaDatas1" ThisKey="ID" OtherKey="DeletedBy" Type="SchemaMetaData" />
+      <Association Name="User_SchemaNote" Member="SchemaNotes" ThisKey="ID" OtherKey="CreatedBy" Type="SchemaNote" />
+      <Association Name="User_SkuGroupData" Member="SkuGroupDatas" ThisKey="ID" OtherKey="CreatedBy" Type="SkuGroupData" />
+      <Association Name="User_SkuInfo" Member="SkuInfos" ThisKey="ID" OtherKey="CreatedBy" Type="SkuInfo" />
+      <Association Name="User_SkuLink" Member="SkuLinks" ThisKey="ID" OtherKey="CreatedBy" Type="SkuLink" />
+      <Association Name="User_SkuLink1" Member="SkuLinks1" ThisKey="ID" OtherKey="DeletedBy" Type="SkuLink" />
+      <Association Name="User_TaxonomyData" Member="TaxonomyDatas" ThisKey="ID" OtherKey="CreatedBy" Type="TaxonomyData" />
+      <Association Name="User_TaxonomyData1" Member="TaxonomyDatas1" ThisKey="ID" OtherKey="DeletedBy" Type="TaxonomyData" />
+      <Association Name="User_TaxonomyNote" Member="TaxonomyNotes" ThisKey="ID" OtherKey="CreatedBy" Type="TaxonomyNote" />
+      <Association Name="User_UserProject" Member="UserProjects" ThisKey="ID" OtherKey="UserID" Type="UserProject" />
+      <Association Name="User_Workflow" Member="Workflows" ThisKey="ID" OtherKey="CreatedBy" Type="Workflow" />
+      <Association Name="User_CheckPointInfo" Member="CheckPointInfos" ThisKey="ID" OtherKey="CreatedBy" Type="CheckPointInfo" />
+      <Association Name="User_Sku" Member="Skus" ThisKey="ID" OtherKey="CreatedBy" Type="Sku" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserProject" Member="UserProjects">
+    <Type Name="UserProject">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Preferences" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Group_UserProject" Member="Group" ThisKey="GroupID" OtherKey="ID" Type="Group" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Project_UserProject" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_UserProject" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="WF.SkuState" Member="SkuStates">
+    <Type Name="SkuState">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SkuGroupID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SkuID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="StateID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserGroupID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ArrivalDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DepartureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserApproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Group_SkuState" Member="Group" ThisKey="UserGroupID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+      <Association Name="Group_SkuState1" Member="Group1" ThisKey="SkuGroupID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+      <Association Name="State_SkuState" Member="State" ThisKey="StateID" OtherKey="ID" Type="State" IsForeignKey="true" />
+      <Association Name="Sku_SkuState" Member="Sku" ThisKey="SkuID" OtherKey="ID" Type="Sku" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="WF.State" Member="States">
+    <Type Name="State">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="WorkflowID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserGroupID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Action" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="[Trigger]" Member="Trigger" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="IsFirst" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="State_SkuState" Member="SkuStates" ThisKey="ID" OtherKey="StateID" Type="SkuState" />
+      <Association Name="Group_State" Member="Group" ThisKey="UserGroupID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+      <Association Name="Workflow_State" Member="Workflow" ThisKey="WorkflowID" OtherKey="ID" Type="Workflow" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="WF.Workflow" Member="Workflows">
+    <Type Name="Workflow">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SkuGroupID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="WorkflowName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Condition" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Schedule" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NextRun" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Source" Type="System.Xml.Linq.XElement" DbType="Xml NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Workflow_State" Member="States" ThisKey="ID" OtherKey="WorkflowID" Type="State" />
+      <Association Name="Group_Workflow" Member="Group" ThisKey="SkuGroupID" OtherKey="ID" Type="Group" IsForeignKey="true" />
+      <Association Name="Project_Workflow" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+      <Association Name="User_Workflow" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[CheckPoint].CheckPointInfo" Member="CheckPointInfos">
+    <Type Name="CheckPointInfo">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Project_CheckPointInfo" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" />
+      <Association Name="User_CheckPointInfo" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sku" Member="Skus">
+    <Type Name="Sku">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SkuType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Sku_EntityInfo" Member="EntityInfos" ThisKey="ID" OtherKey="SkuID" Type="EntityInfo" />
+      <Association Name="Sku_SkuGroup" Member="SkuGroups" ThisKey="ID" OtherKey="SkuID" Type="SkuGroup" />
+      <Association Name="Sku_SkuInfo" Member="SkuInfos" ThisKey="ID" OtherKey="SkuID" Type="SkuInfo" />
+      <Association Name="Sku_SkuLink" Member="SkuLinks" ThisKey="ID" OtherKey="FromSku" Type="SkuLink" />
+      <Association Name="Sku_SkuLink1" Member="SkuLinks1" ThisKey="ID" OtherKey="ToSku" Type="SkuLink" />
+      <Association Name="Sku_SkuState" Member="SkuStates" ThisKey="ID" OtherKey="SkuID" Type="SkuState" />
+      <Association Name="Project_Sku" Member="Project" ThisKey="ProjectID" OtherKey="ID" Type="Project" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_Sku" Member="User" ThisKey="CreatedBy" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UnitOfMeasure" Member="UnitOfMeasures">
+    <Type Name="UnitOfMeasure">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UnitName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="UnitAbbreviation" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BaseUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="FromBaseExpression" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="ToBaseExpression" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="MultiplicationFactor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SummationFactor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Precision" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="UnitOfMeasure_ProjectUom" Member="ProjectUoms" ThisKey="ID" OtherKey="UomID" Type="ProjectUom" />
+      <Association Name="UnitOfMeasure_UnitOfMeasure" Member="UnitOfMeasures" ThisKey="ID" OtherKey="BaseUnit" Type="UnitOfMeasure" />
+      <Association Name="UnitOfMeasure_UnitOfMeasure" Member="UnitOfMeasure1" ThisKey="BaseUnit" OtherKey="ID" Type="UnitOfMeasure" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetIntFromGuidMap" Method="GetIntFromGuidMap">
+    <Parameter Name="guidValue" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Step4AttributeLoadFileSource" Method="Step4AttributeLoadFileSource" IsComposable="true">
+    <Parameter Name="Category" Parameter="category" Type="System.String" DbType="NVarChar(255)" />
+    <Return Type="object" />
+  </Function>
+</Database>

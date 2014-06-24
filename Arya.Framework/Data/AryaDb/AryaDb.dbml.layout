@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17.5, 41.375" name="AryaDb">
+  <DataContextMoniker Name="/AryaDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7e3f02fe-e6e9-45dd-805f-b437626b4f50" absoluteBounds="12.25, 23.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaDbDataContext/DerivedAttribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7198b37-8bd0-49b2-b52a-60db7cd86faf" absoluteBounds="12.265, 23.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9267646d-12e9-40b8-88aa-2c3b97f2889e" absoluteBounds="3.5, 13.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/AryaDbDataContext/DerivedTaxonomy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d57bd4cc-f092-482a-98c9-308f96d3b779" absoluteBounds="3.5150000000000006, 14.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05324a35-2ff7-4eb0-9108-92790ddc275f" absoluteBounds="12.25, 30, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/AryaDbDataContext/EntityInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1dcb27c1-bc3f-4b88-abb5-45e5f6bc8100" absoluteBounds="12.265, 30.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9ac62dd7-9780-41d6-9eb3-e22151ad7bd0" absoluteBounds="4.25, 17.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AryaDbDataContext/ProjectUom" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3aaf9a85-c4a2-43ba-87f0-02311a764b1c" absoluteBounds="4.2650000000000006, 17.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85e197c1-2c68-4128-ab6f-03397276db54" absoluteBounds="9.25, 38.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaDbDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad88865a-4394-418b-861f-e65d88e495b7" absoluteBounds="9.265, 38.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50f702c0-5186-40f8-a415-19437b5f5dfd" absoluteBounds="6.5, 25.75, 2, 3.3093082682291737">
+      <DataClassMoniker Name="/AryaDbDataContext/SchemaData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12100a32-c070-4c7b-9b2b-45a78626d6de" absoluteBounds="6.5150000000000006, 26.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c45c275-55d0-4cff-b2ec-6b6b94c9fdb8" absoluteBounds="9.25, 23.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/AryaDbDataContext/SchemaInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d995d132-a41f-48fe-9dc0-a0e5858b63cd" absoluteBounds="9.265, 24.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2768287d-132d-40c9-af6c-5b1b1de58563" absoluteBounds="3.5, 33, 2, 2.7324039713541737">
+      <DataClassMoniker Name="/AryaDbDataContext/SchemaMetaData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40ba3c35-3859-456a-ab71-b8590359da10" absoluteBounds="3.5150000000000006, 33.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46d716da-8353-4bb4-a12c-4074f26e42e2" absoluteBounds="3.5, 24.375, 2, 2.1554996744791737">
+      <DataClassMoniker Name="/AryaDbDataContext/SkuInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28b0481f-a79b-48bc-96d9-5d146bca0c26" absoluteBounds="3.5150000000000006, 24.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9ed86f8-2280-4afd-850f-368eb3e7d6bc" absoluteBounds="6.5, 30.125, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/AryaDbDataContext/SkuLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07007c6f-d521-492c-a23f-011f314eb7a0" absoluteBounds="6.515, 30.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" absoluteBounds="0.75, 23.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AryaDbDataContext/TaxonomyInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3dcbdf3-4947-47bb-b669-01d6c52c704d" absoluteBounds="0.76499999999999968, 23.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc769ec3-7998-4ae3-84ff-34ab92d316f0" absoluteBounds="0.75, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/AryaDbDataContext/UIObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d31301a-79e7-4a86-857c-8331c5a119ea" absoluteBounds="0.76499999999999968, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="178b5cc5-67c0-432f-b301-34fe6a0eafd4" absoluteBounds="0.75, 2.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/AryaDbDataContext/Checkpoint" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2af1ee5e-0351-4ef4-9967-5fd9fb253d78" absoluteBounds="0.76500000000000057, 3.2100000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80d87e5f-dfc7-40b6-85e2-c4b7f8cda04e" absoluteBounds="15.25, 30.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AryaDbDataContext/SkuGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d8336fa-9bb3-42de-876c-dfe1a30a2904" absoluteBounds="15.265, 31.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be307cc4-dd5a-42b1-92fa-f00c067044b1" absoluteBounds="12.25, 32.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaDbDataContext/GroupNote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b1c4d63-1467-4f9e-88a7-d2db92595f67" absoluteBounds="12.265, 32.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f340c51d-32ba-4c2f-99ab-3e67b27b3e25" absoluteBounds="9.5, 29.875, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AryaDbDataContext/ListOfValue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ec7373f-99d5-420e-a20d-34de6803dddc" absoluteBounds="9.515, 30.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85eec4b0-7fb8-488f-aa49-364378850750" absoluteBounds="3.5, 30.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/AryaDbDataContext/UserProject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff3906a7-330d-4a73-8fff-b5a17a60f1ed" absoluteBounds="3.5150000000000006, 30.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a862625f-032c-49d8-85ff-d8bb801720b3" absoluteBounds="0.75, 30.25, 2, 2.3478011067708273">
+      <DataClassMoniker Name="/AryaDbDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e5cfff0-67e7-4746-a8cc-489222fd55af" absoluteBounds="0.765, 30.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" absoluteBounds="9.5, 26.375, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/AryaDbDataContext/Sku" />
+      <nestedChildShapes>
+        <elementListCompartment Id="922d8bf2-cd6b-400f-a929-9981f741c04d" absoluteBounds="9.515, 26.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bcb4331f-0db3-4241-8ff8-861c2075c0a3" absoluteBounds="9.5, 34, 2, 2.7324039713541737">
+      <DataClassMoniker Name="/AryaDbDataContext/TaxonomyMetaData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a138ed27-0c33-49a4-b121-6ad35dbd37f8" absoluteBounds="9.515, 34.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7441d73b-fd92-4860-ae0b-230a945e2493" absoluteBounds="0.75, 27.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/AryaDbDataContext/Remark" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34d6e6b8-8045-4f96-8f58-9f1f370849cc" absoluteBounds="0.76500000000000057, 28.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="350c5d94-7088-42b8-8f44-c31b9c56f909" absoluteBounds="3.5, 36.875, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AryaDbDataContext/TaxonomyData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57473557-360f-4c34-b869-28c428c81980" absoluteBounds="3.5150000000000006, 37.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 24.2892976888021); (2.88541666666667 : 24.2892976888021 : JumpStart); (3.05208333333333 : 24.2892976888021 : JumpEnd); (3.25 : 24.2892976888021); (3.25 : 22.5); (5.66666666666667 : 22.5 : JumpStart); (5.83333333333333 : 22.5 : JumpEnd); (11.2916641666667 : 22.5 : JumpStart); (11.4583308333333 : 22.5 : JumpEnd); (13.25 : 22.5); (13.25 : 23.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyInfo/TaxonomyInfo_DerivedAttribute" />
+      <nodes>
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+        <classShapeMoniker Id="7e3f02fe-e6e9-45dd-805f-b437626b4f50" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.09375 : 23.5); (1.09375 : 14.3181469726562); (3.5 : 14.3181469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyInfo/TaxonomyInfo_DerivedTaxonomy" />
+      <nodes>
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+        <classShapeMoniker Id="9267646d-12e9-40b8-88aa-2c3b97f2889e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 28.2430576350661); (12.0625 : 28.8055576350661); (12.0625 : 30.5969962565104); (12.25 : 30.5969962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Sku/Sku_EntityInfo" />
+      <nodes>
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+        <classShapeMoniker Id="05324a35-2ff7-4eb0-9108-92790ddc275f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 24.6675439453125); (8.40625 : 24.6675439453125); (8.40625 : 25.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/SchemaInfo/SchemaInfo_SchemaData" />
+      <nodes>
+        <classShapeMoniker Id="6c45c275-55d0-4cff-b2ec-6b6b94c9fdb8" />
+        <classShapeMoniker Id="50f702c0-5186-40f8-a415-19437b5f5dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.3053836153846); (2.93038361538461 : 30.125); (2.94791666666667 : 30.125 : JumpStart); (3.52083333333333 : 30.125 : JumpEnd); (6.25 : 30.125); (6.25 : 29.3431534220753); (6.53384515384615 : 29.0593082682292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_SchemaData" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="50f702c0-5186-40f8-a415-19437b5f5dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.2669220769231); (2.82942207692308 : 30.1875); (2.88541666666667 : 30.1875 : JumpStart); (3.52083333333333 : 30.1875 : JumpEnd); (6.125 : 30.1875); (6.125 : 29.4020005759215); (6.28482443490112 : 29.2421761410204 : JumpStart); (6.46517556509888 : 29.0618250108226 : JumpEnd); (6.5 : 29.0270005759215)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_SchemaData1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="50f702c0-5186-40f8-a415-19437b5f5dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 27.75); (1.75 : 26.9527498372396); (2.88541666666667 : 26.9527498372396 : JumpStart); (3.05208333333333 : 26.9527498372396 : JumpEnd); (3.24479166666667 : 26.9527498372396 : JumpStart); (3.48958333333333 : 26.9527498372396 : JumpEnd); (6.26041666666667 : 26.9527498372396 : JumpStart); (6.42708333333333 : 26.9527498372396 : JumpEnd); (6.5 : 26.9527498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_SchemaData" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="50f702c0-5186-40f8-a415-19437b5f5dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 27.75); (2.2812525 : 27.1638774186198); (2.88541666666667 : 27.1638774186198 : JumpStart); (3.05208333333333 : 27.1638774186198 : JumpEnd); (3.24479166666667 : 27.1638774186198 : JumpStart); (3.41145833333333 : 27.1638774186198 : JumpEnd); (6.5 : 27.1638774186198)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_SchemaData1" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="50f702c0-5186-40f8-a415-19437b5f5dfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.953127 : 23.5); (1.953127 : 23.25); (2.33073016666667 : 23.25 : JumpStart); (2.49739683333333 : 23.25 : JumpEnd); (2.68620091666667 : 23.25 : JumpStart); (2.85286758333333 : 23.25 : JumpEnd); (6 : 23.25); (6 : 24.4019164453125); (9.25 : 24.4019164453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyInfo/TaxonomyInfo_SchemaInfo" />
+      <nodes>
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+        <classShapeMoniker Id="6c45c275-55d0-4cff-b2ec-6b6b94c9fdb8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 32.5978011067708); (1.75 : 34.3662019856771); (2.06510604166667 : 34.3662019856771 : JumpStart); (2.23177270833333 : 34.3662019856771 : JumpEnd); (2.59635854166667 : 34.3662019856771 : JumpStart); (2.76302520833333 : 34.3662019856771 : JumpEnd); (3.04166666666667 : 34.3662019856771 : JumpStart); (3.41145833333333 : 34.3662019856771 : JumpEnd); (3.5 : 34.3662019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_SchemaMetaData" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="2768287d-132d-40c9-af6c-5b1b1de58563" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 32.5978011067708); (2.2812525 : 33.6518484928385); (2.59635854166667 : 33.6518484928385 : JumpStart); (2.76302520833333 : 33.6518484928385 : JumpEnd); (3.04166666666667 : 33.6518484928385 : JumpStart); (3.41145833333333 : 33.6518484928385 : JumpEnd); (3.5 : 33.6518484928385)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_SchemaMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="2768287d-132d-40c9-af6c-5b1b1de58563" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 29.1245627657752); (2.81607443490112 : 29.1906372006763 : JumpStart); (3.02767556509888 : 29.4022383308741 : JumpEnd); (3.28125 : 29.6558127657752); (3.28125 : 35.0805549785156); (3.5 : 35.0805549785156)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_SchemaMetaData" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="2768287d-132d-40c9-af6c-5b1b1de58563" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 29.0979032668269); (2.81607443490112 : 29.163977701728 : JumpStart); (3.02767556509888 : 29.3755788319258 : JumpEnd); (3.17544943490112 : 29.523352701728 : JumpStart); (3.29330056509888 : 29.6412038319258 : JumpEnd); (3.31607443490112 : 29.663977701728 : JumpStart); (3.43392556509888 : 29.7818288319258 : JumpEnd); (3.4375 : 29.7854032668269); (3.4375 : 35.0805549785156); (3.5 : 35.0805549785156)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_SchemaMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="2768287d-132d-40c9-af6c-5b1b1de58563" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 24.7267976888021); (2.88541666666667 : 24.7267976888021 : JumpStart); (3.09895833333333 : 24.7267976888021 : JumpEnd); (3.5 : 24.7267976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyInfo/TaxonomyInfo_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+        <classShapeMoniker Id="46d716da-8353-4bb4-a12c-4074f26e42e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.72846153846154 : 30.25); (2.90982443490112 : 30.0686371035604 : JumpStart); (3.02767556509888 : 29.9507859733626 : JumpEnd); (3.26919943490112 : 29.7092621035604 : JumpStart); (3.38705056509888 : 29.5914109733626 : JumpEnd); (3.40625 : 29.5722115384615); (3.40625 : 25.6599006816406); (3.5 : 25.6599006816406)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="46d716da-8353-4bb4-a12c-4074f26e42e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.40625 : 26.375); (11.40625 : 25.4431469726563); (9.45833333333333 : 25.4431469726563 : JumpStart); (9.29166666666667 : 25.4431469726563 : JumpEnd); (8.99789023246977 : 25.4431469726563 : JumpStart); (8.83122356580311 : 25.4431469726563 : JumpEnd); (6.42708333333333 : 25.4431469726563 : JumpStart); (6.26041666666667 : 25.4431469726563 : JumpEnd); (5.83333333333333 : 25.4431469726563 : JumpStart); (5.66666666666667 : 25.4431469726563 : JumpEnd); (5.5 : 25.4431469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Sku/Sku_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+        <classShapeMoniker Id="46d716da-8353-4bb4-a12c-4074f26e42e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 27.75); (3.375 : 27.125); (3.375 : 26.1264521780599); (3.5 : 26.1264521780599)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="46d716da-8353-4bb4-a12c-4074f26e42e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 32.4655989583333); (3.04166666666667 : 32.4655989583333 : JumpStart); (3.52083333333333 : 32.4655989583333 : JumpEnd); (6.19791666666667 : 32.4655989583333 : JumpStart); (6.39583333333333 : 32.4655989583333 : JumpEnd); (6.5 : 32.4655989583333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_SkuLink" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="d9ed86f8-2280-4afd-850f-368eb3e7d6bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.3996173846154); (2.88541666666667 : 30.3996173846154 : JumpStart); (3.52083333333333 : 30.3996173846154 : JumpEnd); (6.19791666666667 : 30.3996173846154 : JumpStart); (6.39583333333333 : 30.3996173846154 : JumpEnd); (6.5 : 30.3996173846154)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_SkuLink1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="d9ed86f8-2280-4afd-850f-368eb3e7d6bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.59664875961538 : 28.3381982421875); (9.43392556509888 : 28.500921436704 : JumpStart); (9.31607443490112 : 28.6187725669018 : JumpEnd); (9.3125 : 28.6223470018029); (9.3125 : 31.3950512695313); (9.08333333333333 : 31.3950512695313 : JumpStart); (8.79166666666667 : 31.3950512695313 : JumpEnd); (8.5 : 31.3950512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Sku/Sku_SkuLink" />
+      <nodes>
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+        <classShapeMoniker Id="d9ed86f8-2280-4afd-850f-368eb3e7d6bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 28.3064850398137); (9.43392556509888 : 28.3725594747148 : JumpStart); (9.31607443490112 : 28.4904106049126 : JumpEnd); (9.24642556509888 : 28.5600594747148 : JumpStart); (9.12857443490112 : 28.6779106049126 : JumpEnd); (9.125 : 28.6814850398137); (9.125 : 31.3950512695313); (9.08333333333333 : 31.3950512695313 : JumpStart); (8.79166666666667 : 31.3950512695313 : JumpEnd); (8.5 : 31.3950512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Sku/Sku_SkuLink1" />
+      <nodes>
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+        <classShapeMoniker Id="d9ed86f8-2280-4afd-850f-368eb3e7d6bc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.4682867976262 : 28.3381982421875); (11.875 : 28.7449114445613); (11.875 : 31.7925434453125); (15.25 : 31.7925434453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Sku/Sku_SkuGroup" />
+      <nodes>
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+        <classShapeMoniker Id="80d87e5f-dfc7-40b6-85e2-c4b7f8cda04e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.218748 : 32.5978011067708); (1.218748 : 32.75); (1.40104066666667 : 32.75 : JumpStart); (1.96614645833333 : 32.75 : JumpEnd); (2.06510604166667 : 32.75 : JumpStart); (2.36458583333333 : 32.75 : JumpEnd); (2.46354541666667 : 32.75 : JumpStart); (2.76302520833333 : 32.75 : JumpEnd); (2.82291666666667 : 32.75 : JumpStart); (2.98958333333333 : 32.75 : JumpEnd); (3.04166666666667 : 32.75 : JumpStart); (3.52083333333333 : 32.75 : JumpEnd); (4.41666666666667 : 32.75 : JumpStart); (4.58333333333333 : 32.75 : JumpEnd); (6.25 : 32.75); (6.25 : 33.4960034179688); (9.10416666666667 : 33.4960034179688 : JumpStart); (9.33333333333333 : 33.4960034179688 : JumpEnd); (9.88541466666667 : 33.4960034179688 : JumpStart); (10.0520813333333 : 33.4960034179688 : JumpEnd); (10.4166666666667 : 33.4960034179688 : JumpStart); (10.5833333333333 : 33.4960034179688 : JumpEnd); (11.6666666666667 : 33.4960034179688 : JumpStart); (11.8333333333333 : 33.4960034179688 : JumpEnd); (11.9166666666667 : 33.4960034179688 : JumpStart); (12.0833333333333 : 33.4960034179688 : JumpEnd); (12.25 : 33.4960034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_GroupNote" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="be307cc4-dd5a-42b1-92fa-f00c067044b1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 25.1362939453125); (8.56676757484023 : 25.7612939453125); (9.1875 : 25.7612939453125); (9.1875 : 29.5625); (9.25357443490112 : 29.6285744349011 : JumpStart); (9.37142556509888 : 29.7464255650989 : JumpEnd); (9.5 : 29.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/SchemaInfo/SchemaInfo_ListOfValue" />
+      <nodes>
+        <classShapeMoniker Id="6c45c275-55d0-4cff-b2ec-6b6b94c9fdb8" />
+        <classShapeMoniker Id="f340c51d-32ba-4c2f-99ab-3e67b27b3e25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.54687875 : 32.5978011067708); (2.54687875 : 32.8710034179688); (3.35416666666667 : 32.8710034179688 : JumpStart); (3.52083333333333 : 32.8710034179688 : JumpEnd); (8.79166666666667 : 32.8710034179688 : JumpStart); (9.08333333333333 : 32.8710034179688 : JumpEnd); (9.5 : 32.8710034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_ListOfValue" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="f340c51d-32ba-4c2f-99ab-3e67b27b3e25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.01562625 : 32.5978011067708); (2.01562625 : 32.9022559179688); (2.06510604166667 : 32.9022559179688 : JumpStart); (2.36458583333333 : 32.9022559179688 : JumpEnd); (2.59635854166667 : 32.9022559179688 : JumpStart); (2.76302520833333 : 32.9022559179688 : JumpEnd); (2.82291666666667 : 32.9022559179688 : JumpStart); (2.98958333333333 : 32.9022559179688 : JumpEnd); (3.04166666666667 : 32.9022559179688 : JumpStart); (3.52083333333333 : 32.9022559179688 : JumpEnd); (4.41666666666667 : 32.9022559179688 : JumpStart); (4.58333333333333 : 32.9022559179688 : JumpEnd); (6.04166666666667 : 32.9022559179688 : JumpStart); (6.48958333333333 : 32.9022559179688 : JumpEnd); (8.79166666666667 : 32.9022559179688 : JumpStart); (9.08333333333333 : 32.9022559179688 : JumpEnd); (9.10416666666667 : 32.9022559179688 : JumpStart); (9.33333333333333 : 32.9022559179688 : JumpEnd); (9.5 : 32.9022559179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_ListOfValue1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="f340c51d-32ba-4c2f-99ab-3e67b27b3e25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 31.3854484049479); (3.5 : 31.3854484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_UserProject" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="85eec4b0-7fb8-488f-aa49-364378850750" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 31.9255236816406); (3 : 31.9255236816406); (3 : 29.75); (3.14512820512818 : 29.75 : JumpStart); (3.45833333333333 : 29.75 : JumpEnd); (6.19791666666667 : 29.75 : JumpStart); (6.36458333333333 : 29.75 : JumpEnd); (9 : 29.75); (9 : 29.625); (10.5324677786208 : 29.625); (10.5324677786208 : 28.3381982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_Sku" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.9531215 : 32.5978011067708); (0.9531215 : 36.6963525390625); (9.5 : 36.6963525390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_TaxonomyMetaData" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="bcb4331f-0db3-4241-8ff8-861c2075c0a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.484374 : 32.5978011067708); (1.484374 : 36.6783268229167); (1.79947979166667 : 36.6783268229167 : JumpStart); (1.96614645833333 : 36.6783268229167 : JumpEnd); (2.06510604166667 : 36.6783268229167 : JumpStart); (2.23177270833333 : 36.6783268229167 : JumpEnd); (2.59635854166667 : 36.6783268229167 : JumpStart); (2.76302520833333 : 36.6783268229167 : JumpEnd); (3.04166666666667 : 36.6783268229167 : JumpStart); (3.41145833333333 : 36.6783268229167 : JumpEnd); (6.19791666666667 : 36.6783268229167 : JumpStart); (6.39583333333333 : 36.6783268229167 : JumpEnd); (8.49873184435097 : 36.6783268229167 : JumpStart); (8.66539851101763 : 36.6783268229167 : JumpEnd); (9.10416666666667 : 36.6783268229167 : JumpStart); (9.33333333333333 : 36.6783268229167 : JumpEnd); (9.5 : 36.6783268229167)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_TaxonomyMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="bcb4331f-0db3-4241-8ff8-861c2075c0a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.415953783729); (2.875 : 28.415953783729); (2.875 : 29.8429996744792); (8.875 : 29.8429996744792); (8.875 : 33.2420068359375); (10.5 : 33.2420068359375); (10.5 : 34)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_TaxonomyMetaData" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="bcb4331f-0db3-4241-8ff8-861c2075c0a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.7489306755934); (2.79166666666667 : 28.7489306755934 : JumpStart); (2.95833333333333 : 28.7489306755934 : JumpEnd); (3.15104166666667 : 28.7489306755934 : JumpStart); (3.31770833333333 : 28.7489306755934 : JumpEnd); (3.375 : 28.7489306755934); (3.375 : 30.0304996744792); (8.79166666666667 : 30.0304996744792 : JumpStart); (8.95833333333333 : 30.0304996744792 : JumpEnd); (9 : 30.0304996744792); (9 : 33.3670068359375); (9.968748 : 33.3670068359375); (9.968748 : 34)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_TaxonomyMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="bcb4331f-0db3-4241-8ff8-861c2075c0a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.70841118164063 : 29.1362939453125); (2.81607443490113 : 29.243957198573 : JumpStart); (3.02767556509888 : 29.4555583287708 : JumpEnd); (3.125 : 29.5528827636719); (3.125 : 38.4335034179688); (3.5 : 38.4335034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_TaxonomyData" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="350c5d94-7088-42b8-8f44-c31b9c56f909" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 29.1202972459435); (2.81607443490112 : 29.1863716808446 : JumpStart); (3.02767556509888 : 29.3979728110424 : JumpEnd); (3.15625 : 29.5265472459435); (3.15625 : 38.4335034179688); (3.5 : 38.4335034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_TaxonomyData1" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="350c5d94-7088-42b8-8f44-c31b9c56f909" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.72449961313101 : 25.0785953776042); (2.88595000908894 : 25.0969497807881 : JumpStart); (3.09842499091106 : 25.1211048871272 : JumpEnd); (3.1875 : 25.131231332595); (3.1875 : 37.6229997089844); (3.5 : 37.6229997089844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyInfo/TaxonomyInfo_TaxonomyData" />
+      <nodes>
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+        <classShapeMoniker Id="350c5d94-7088-42b8-8f44-c31b9c56f909" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 25.0373080369591); (2.88595000908895 : 25.0527634420999 : JumpStart); (3.05154999091105 : 25.0715895887661 : JumpEnd); (3.328125 : 25.1030318729258); (3.328125 : 37.6229997089844); (3.5 : 37.6229997089844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyInfo/TaxonomyInfo_TaxonomyData1" />
+      <nodes>
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+        <classShapeMoniker Id="350c5d94-7088-42b8-8f44-c31b9c56f909" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.679691875 : 32.5978011067708); (2.679691875 : 39.2440076269531); (3.5 : 39.2440076269531)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_TaxonomyData" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="350c5d94-7088-42b8-8f44-c31b9c56f909" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.414065625 : 32.5978011067708); (2.414065625 : 37.2177473544922); (2.59635854166667 : 37.2177473544922 : JumpStart); (2.76302520833333 : 37.2177473544922 : JumpEnd); (3.04166666666667 : 37.2177473544922 : JumpStart); (3.41145833333333 : 37.2177473544922 : JumpEnd); (3.5 : 37.2177473544922)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_TaxonomyData1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="350c5d94-7088-42b8-8f44-c31b9c56f909" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="941f15b1-031d-455e-9bd9-aaccc1713995" absoluteBounds="3.5, 27.375, 2, 2.1554996744791737">
+      <DataClassMoniker Name="/AryaDbDataContext/Attribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="268420ea-8434-4f6f-9793-3508f957c676" absoluteBounds="3.5150000000000006, 27.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 28.4527498372396); (6.25 : 28.4527498372396); (6.25 : 25.625); (6.26041666666667 : 25.625 : JumpStart); (6.42708333333333 : 25.625 : JumpEnd); (9.29166666666667 : 25.625 : JumpStart); (9.45833333333333 : 25.625 : JumpEnd); (13.25 : 25.625); (13.25 : 25.2708968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_DerivedAttribute" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="7e3f02fe-e6e9-45dd-805f-b437626b4f50" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 29.3261539713542); (6.19791666666667 : 29.3261539713542 : JumpStart); (6.36458333333333 : 29.3261539713542 : JumpEnd); (9.375 : 29.3261539713542); (9.375 : 25.1362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_SchemaInfo" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="6c45c275-55d0-4cff-b2ec-6b6b94c9fdb8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.70538461538462 : 30.25); (3.234375 : 29.7210096153846); (3.234375 : 28.0619658377967); (3.5 : 28.0619658377967)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_Attribute" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="19378e9b-5564-444b-a8a7-8ce4191fc1b2" absoluteBounds="15, 21.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/AryaDbDataContext/SchemaMetaInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94ef4ebe-1f98-4b3e-9b8d-d429131eb1a9" absoluteBounds="15.015, 22.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15 : 22.7792902043269); (13.3333333333333 : 22.7792902043269 : JumpStart); (13.1666666666667 : 22.7792902043269 : JumpEnd); (11.4583308333333 : 22.7792902043269 : JumpStart); (11.2916641666667 : 22.7792902043269 : JumpEnd); (5.83333333333333 : 22.7792902043269 : JumpStart); (5.66666666666667 : 22.7792902043269 : JumpEnd); (3.33333333333333 : 22.7792902043269 : JumpStart); (3.16666666666667 : 22.7792902043269 : JumpEnd); (3.0625 : 22.7792902043269); (3.0625 : 32.625); (3.07291666666667 : 32.625 : JumpStart); (3.52083333333333 : 32.625 : JumpEnd); (4.5 : 32.625); (4.5 : 33)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/SchemaMetaInfo/SchemaMetaInfo_SchemaMetaData" />
+      <nodes>
+        <classShapeMoniker Id="19378e9b-5564-444b-a8a7-8ce4191fc1b2" />
+        <classShapeMoniker Id="2768287d-132d-40c9-af6c-5b1b1de58563" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 27.375); (4.5 : 26.7804996744792); (5.75 : 26.7804996744792); (5.75 : 22.1875005); (11.2916641666667 : 22.1875005 : JumpStart); (11.4583308333333 : 22.1875005 : JumpEnd); (15 : 22.1875005)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_SchemaMetaInfo" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="19378e9b-5564-444b-a8a7-8ce4191fc1b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.25 : 23.75); (10.25 : 23.0515445748197); (15 : 23.0515445748197)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/SchemaInfo/SchemaInfo_SchemaMetaInfo" />
+      <nodes>
+        <classShapeMoniker Id="6c45c275-55d0-4cff-b2ec-6b6b94c9fdb8" />
+        <classShapeMoniker Id="19378e9b-5564-444b-a8a7-8ce4191fc1b2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="91cf2266-1769-4b3a-b619-f1ba5991a434" absoluteBounds="12.25, 35.125, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/AryaDbDataContext/AttributeGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a46c3554-8ecd-4df9-9549-eea74111eaaf" absoluteBounds="12.265, 35.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 27.8826229186198); (6.16666666666667 : 27.8826229186198 : JumpStart); (6.33333333333333 : 27.8826229186198 : JumpEnd); (6.375 : 27.8826229186198); (6.375 : 29.2179996744792); (9.04166666666667 : 29.2179996744792 : JumpStart); (9.45833333333333 : 29.2179996744792 : JumpEnd); (10.4491344452875 : 29.2179996744792 : JumpStart); (10.6158011119541 : 29.2179996744792 : JumpEnd); (11.75 : 29.2179996744792); (11.75 : 34.75); (13.25 : 34.75); (13.25 : 35.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_AttributeGroup" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="91cf2266-1769-4b3a-b619-f1ba5991a434" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c5239884-d8b8-4162-a0b8-f2e7b12ec5ca" absoluteBounds="6.25, 37.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/AryaDbDataContext/AttributeMetaInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="415b0cb7-9ba1-4777-893c-0cca84a9cc53" absoluteBounds="6.2650000000000006, 38.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 29.4595793229167); (6.3125 : 29.4595793229167); (6.3125 : 37.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_AttributeMetaInfo" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="c5239884-d8b8-4162-a0b8-f2e7b12ec5ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 29.1699039713542); (6.28125 : 29.1699039713542); (6.28125 : 37.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_AttributeMetaInfo1" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="c5239884-d8b8-4162-a0b8-f2e7b12ec5ca" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4f9d954f-0a6b-4ff6-acf4-03df03ec02ca" absoluteBounds="12, 38.375, 2, 2.7324039713541595">
+      <DataClassMoniker Name="/AryaDbDataContext/AttributeMetaData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efc9e7ac-7181-4a8b-952d-5027fb1251e9" absoluteBounds="12.015, 38.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 38.40625); (8.32291666666667 : 38.40625 : JumpStart); (8.48958333333333 : 38.40625 : JumpEnd); (12 : 38.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/AttributeMetaInfo/AttributeMetaInfo_AttributeMetaData" />
+      <nodes>
+        <classShapeMoniker Id="c5239884-d8b8-4162-a0b8-f2e7b12ec5ca" />
+        <classShapeMoniker Id="4f9d954f-0a6b-4ff6-acf4-03df03ec02ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.2077073107628); (2.9375 : 28.2077073107628); (2.9375 : 29.9054996744792); (2.96655160757208 : 29.9054996744792 : JumpStart); (3.52083333333333 : 29.9054996744792 : JumpEnd); (6.16666666666667 : 29.9054996744792 : JumpStart); (6.39583333333333 : 29.9054996744792 : JumpEnd); (9.25 : 29.9054996744792); (9.25 : 38); (12.3854146666667 : 38 : JumpStart); (12.5520813333333 : 38 : JumpEnd); (13 : 38); (13 : 38.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_AttributeMetaData" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="4f9d954f-0a6b-4ff6-acf4-03df03ec02ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 27.9372354188984); (2.8125 : 27.9372354188984); (2.8125 : 29.9679996744792); (2.88541666666667 : 29.9679996744792 : JumpStart); (3.52083333333333 : 29.9679996744792 : JumpEnd); (6.16666666666667 : 29.9679996744792 : JumpStart); (6.39583333333333 : 29.9679996744792 : JumpEnd); (8.79166666666667 : 29.9679996744792 : JumpStart); (8.95833333333333 : 29.9679996744792 : JumpEnd); (9.1875 : 29.9679996744792); (9.1875 : 37.75); (12.468748 : 37.75); (12.468748 : 38.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_AttributeMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="4f9d954f-0a6b-4ff6-acf4-03df03ec02ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.148439375 : 32.5978011067708); (2.148439375 : 40.720400390625); (12 : 40.720400390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_AttributeMetaData" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="4f9d954f-0a6b-4ff6-acf4-03df03ec02ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.882813125 : 32.5978011067708); (1.882813125 : 40.4956461002604); (2.06510604166667 : 40.4956461002604 : JumpStart); (2.23177270833333 : 40.4956461002604 : JumpEnd); (12 : 40.4956461002604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_AttributeMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="4f9d954f-0a6b-4ff6-acf4-03df03ec02ca" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8c866216-682a-4c61-bdea-9bd3e76e2540" absoluteBounds="6.25, 22.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/AryaDbDataContext/TaxonomyMetaInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6a2109e-5cee-4bf3-bcf8-0272839c1271" absoluteBounds="6.2650000000000006, 23.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.40625 : 24.1362939453125); (6.40625 : 34.09375); (7.41666666666667 : 34.09375 : JumpStart); (7.58333333333333 : 34.09375 : JumpEnd); (9.10416666666667 : 34.09375 : JumpStart); (9.45833333333333 : 34.09375 : JumpEnd); (9.5 : 34.09375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyMetaInfo/TaxonomyMetaInfo_TaxonomyMetaData" />
+      <nodes>
+        <classShapeMoniker Id="8c866216-682a-4c61-bdea-9bd3e76e2540" />
+        <classShapeMoniker Id="bcb4331f-0db3-4241-8ff8-861c2075c0a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 29.2949014713542); (6.34375 : 29.2949014713542); (6.34375 : 24.1362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_TaxonomyMetaInfo" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="8c866216-682a-4c61-bdea-9bd3e76e2540" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 23.8181469726563); (2.88541666666667 : 23.8181469726563 : JumpStart); (3.05208333333333 : 23.8181469726563 : JumpEnd); (5.91666666666667 : 23.8181469726563 : JumpStart); (6.08333333333333 : 23.8181469726563 : JumpEnd); (6.25 : 23.8181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/TaxonomyInfo/TaxonomyInfo_TaxonomyMetaInfo" />
+      <nodes>
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+        <classShapeMoniker Id="8c866216-682a-4c61-bdea-9bd3e76e2540" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="af0210ec-7344-49f8-b62d-41efeba6f01b" absoluteBounds="12.25, 26.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AryaDbDataContext/DerivedEntityData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96f87929-74a8-428e-a6f3-c0228ac1d30a" absoluteBounds="12.265, 27.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 29.3574064713542); (6.19791666666667 : 29.3574064713542 : JumpStart); (6.36458333333333 : 29.3574064713542 : JumpEnd); (11.7916666666667 : 29.3574064713542 : JumpStart); (11.9583333333333 : 29.3574064713542 : JumpEnd); (11.9791666666667 : 29.3574064713542 : JumpStart); (12.1458333333333 : 29.3574064713542 : JumpEnd); (13.25 : 29.3574064713542); (13.25 : 29.0304996744792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_DerivedEntityData" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="af0210ec-7344-49f8-b62d-41efeba6f01b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 27.5277763175331); (12.25 : 27.5277763175331)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Sku/Sku_DerivedEntityData" />
+      <nodes>
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+        <classShapeMoniker Id="af0210ec-7344-49f8-b62d-41efeba6f01b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7d15daaf-9feb-48fc-8d32-aa847598bd75" absoluteBounds="15, 24.625, 2, 4.655418294270838">
+      <DataClassMoniker Name="/AryaDbDataContext/EntityData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c279a890-487e-4540-a24b-a782580d2af5" absoluteBounds="15.015, 25.085, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.031252 : 27.375); (5.031252 : 27.0152091471354); (6 : 27.0152091471354); (6 : 25.5625); (6.26041666666667 : 25.5625 : JumpStart); (6.42708333333333 : 25.5625 : JumpEnd); (8.32291666666667 : 25.5625 : JumpStart); (8.48958333333333 : 25.5625 : JumpEnd); (8.70075019248759 : 25.5625 : JumpStart); (8.86741685915426 : 25.5625 : JumpEnd); (9.29166666666667 : 25.5625 : JumpStart); (9.45833333333333 : 25.5625 : JumpEnd); (11.2916641666667 : 25.5625 : JumpStart); (11.4895833333333 : 25.5625 : JumpEnd); (14.625 : 25.5625); (14.625 : 26.9527091471354); (15 : 26.9527091471354)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Attribute/Attribute_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+        <classShapeMoniker Id="7d15daaf-9feb-48fc-8d32-aa847598bd75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 30.34375); (15.09375 : 30.34375); (15.09375 : 29.2804182942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/EntityInfo/EntityInfo_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="05324a35-2ff7-4eb0-9108-92790ddc275f" />
+        <classShapeMoniker Id="7d15daaf-9feb-48fc-8d32-aa847598bd75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.9234169712102); (2.79166666666667 : 28.9234169712102 : JumpStart); (3.05208333333333 : 28.9234169712102 : JumpEnd); (3.09375 : 28.9234169712102); (3.09375 : 29.7804996744792); (3.10416666666667 : 29.7804996744792 : JumpStart); (3.45833333333333 : 29.7804996744792 : JumpEnd); (6.16666666666667 : 29.7804996744792 : JumpStart); (6.39583333333333 : 29.7804996744792 : JumpEnd); (8.97916666666667 : 29.7804996744792 : JumpStart); (9.20833333333333 : 29.7804996744792 : JumpEnd); (9.375 : 29.7804996744792); (9.375 : 29.75); (11.6666666666667 : 29.75 : JumpStart); (11.9583333333333 : 29.75 : JumpEnd); (11.9791666666667 : 29.75 : JumpStart); (12.1458333333333 : 29.75 : JumpEnd); (15.0104166666667 : 29.75 : JumpStart); (15.1770833333333 : 29.75 : JumpEnd); (16.078127 : 29.75); (16.078127 : 29.2804182942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="7d15daaf-9feb-48fc-8d32-aa847598bd75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.5824422296612); (2.79166666666667 : 28.5824422296612 : JumpStart); (3.41145833333333 : 28.5824422296612 : JumpEnd); (3.46875 : 28.5824422296612); (3.46875 : 29.8117496744792); (6.04166666666667 : 29.8117496744792 : JumpStart); (6.48958333333333 : 29.8117496744792 : JumpEnd); (9.04166666666667 : 29.8117496744792 : JumpStart); (9.20833333333333 : 29.8117496744792 : JumpEnd); (9.22916666666667 : 29.8117496744792 : JumpStart); (9.39583333333333 : 29.8117496744792 : JumpEnd); (9.4375 : 29.8117496744792); (9.4375 : 29.5); (10.4491344452875 : 29.5 : JumpStart); (10.6158011119541 : 29.5 : JumpEnd); (11.6666666666667 : 29.5 : JumpStart); (11.9583333333333 : 29.5 : JumpEnd); (11.9791666666667 : 29.5 : JumpStart); (12.1458333333333 : 29.5 : JumpEnd); (15.0104166666667 : 29.5 : JumpStart); (15.1770833333333 : 29.5 : JumpEnd); (15.5859385 : 29.5); (15.5859385 : 29.2804182942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Remark/Remark_EntityData1" />
+      <nodes>
+        <classShapeMoniker Id="7441d73b-fd92-4860-ae0b-230a945e2493" />
+        <classShapeMoniker Id="7d15daaf-9feb-48fc-8d32-aa847598bd75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.8925328947816); (2.82291666666667 : 30.8925328947816 : JumpStart); (3.36458333333333 : 30.8925328947816 : JumpEnd); (3.40625 : 30.8925328947816); (3.40625 : 29.6875); (6.16666666666667 : 29.6875 : JumpStart); (6.39583333333333 : 29.6875 : JumpEnd); (8.97916666666667 : 29.6875 : JumpStart); (9.20833333333333 : 29.6875 : JumpEnd); (9.22916666666667 : 29.6875 : JumpStart); (9.39583333333333 : 29.6875 : JumpEnd); (11.6666666666667 : 29.6875 : JumpStart); (11.9583333333333 : 29.6875 : JumpEnd); (11.9791666666667 : 29.6875 : JumpStart); (12.1458333333333 : 29.6875 : JumpEnd); (15.0104166666667 : 29.6875 : JumpStart); (15.1770833333333 : 29.6875 : JumpEnd); (16.5703155 : 29.6875); (16.5703155 : 29.2804182942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="7d15daaf-9feb-48fc-8d32-aa847598bd75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 31.6554860432943); (3.03125 : 31.6554860432943); (3.03125 : 29.875); (3.19791666666667 : 29.875 : JumpStart); (3.52083333333333 : 29.875 : JumpEnd); (6.19791666666667 : 29.875 : JumpStart); (6.36458333333333 : 29.875 : JumpEnd); (9.0625 : 29.875); (9.0625 : 29.5625); (11.7916666666667 : 29.5625 : JumpStart); (11.9583333333333 : 29.5625 : JumpEnd); (11.9791666666667 : 29.5625 : JumpStart); (12.1458333333333 : 29.5625 : JumpEnd); (15.33984425 : 29.5625); (15.33984425 : 29.2804182942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_EntityData1" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="7d15daaf-9feb-48fc-8d32-aa847598bd75" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0cf078d3-f33f-4bec-9b9d-756023fc4d64" absoluteBounds="1.5, 16.75, 2, 5.2323225911458309">
+      <DataClassMoniker Name="/AryaDbDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6ea6bd1-ddfc-4d89-ae2b-8f0efe6b4f22" absoluteBounds="1.5149999999999997, 17.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 18.2892976888021); (4.25 : 18.2892976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Project/Project_ProjectUom" />
+      <nodes>
+        <classShapeMoniker Id="0cf078d3-f33f-4bec-9b9d-756023fc4d64" />
+        <classShapeMoniker Id="9ac62dd7-9780-41d6-9eb3-e22151ad7bd0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.4140635 : 21.9823225911458); (2.4140635 : 23.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Project/Project_TaxonomyInfo" />
+      <nodes>
+        <classShapeMoniker Id="0cf078d3-f33f-4bec-9b9d-756023fc4d64" />
+        <classShapeMoniker Id="0f8e2772-0e53-424e-bbef-bafbe9b2f557" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.76953425 : 21.9823225911458); (2.76953425 : 23.375); (2.96875 : 23.375); (2.96875 : 31.1077381498648); (3.5 : 31.1077381498648)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Project/Project_UserProject" />
+      <nodes>
+        <classShapeMoniker Id="0cf078d3-f33f-4bec-9b9d-756023fc4d64" />
+        <classShapeMoniker Id="85eec4b0-7fb8-488f-aa49-364378850750" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 21.1626611328125); (11.3749975 : 21.1626611328125); (11.3749975 : 26.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Project/Project_Sku" />
+      <nodes>
+        <classShapeMoniker Id="0cf078d3-f33f-4bec-9b9d-756023fc4d64" />
+        <classShapeMoniker Id="5ebe72e5-7463-4d0b-925d-d86cd56d414a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.015625 : 21.9823225911458); (3.015625 : 29.3646468098958); (3.15104166666667 : 29.3646468098958 : JumpStart); (3.48958333333333 : 29.3646468098958 : JumpEnd); (3.5 : 29.3646468098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Project/Project_Attribute" />
+      <nodes>
+        <classShapeMoniker Id="0cf078d3-f33f-4bec-9b9d-756023fc4d64" />
+        <classShapeMoniker Id="941f15b1-031d-455e-9bd9-aaccc1713995" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" absoluteBounds="6.5, 34.25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/AryaDbDataContext/Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b756dd10-1361-4885-841b-0fc4a8952ea2" absoluteBounds="6.5150000000000006, 34.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.40625 : 36.5978011067708); (8.40625 : 39.7973453776042); (9.25 : 39.7973453776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Group/Group_Role" />
+      <nodes>
+        <classShapeMoniker Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" />
+        <classShapeMoniker Id="85e197c1-2c68-4128-ab6f-03397276db54" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 35.4239005533854); (9.10416666666667 : 35.4239005533854 : JumpStart); (9.27083333333333 : 35.4239005533854 : JumpEnd); (9.375 : 35.4239005533854); (9.375 : 33.75); (9.88541466666667 : 33.75 : JumpStart); (10.0520813333333 : 33.75 : JumpEnd); (10.4166666666667 : 33.75 : JumpStart); (10.5833333333333 : 33.75 : JumpEnd); (12 : 33.75); (12 : 32.25); (15 : 32.25); (15 : 32.5785953776042); (16.25 : 32.5785953776042); (16.25 : 32.3285953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Group/Group_SkuGroup" />
+      <nodes>
+        <classShapeMoniker Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" />
+        <classShapeMoniker Id="80d87e5f-dfc7-40b6-85e2-c4b7f8cda04e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 34.25); (7.5 : 33.569349227514); (9.10416666666667 : 33.569349227514 : JumpStart); (9.33333333333333 : 33.569349227514 : JumpEnd); (9.88541466666667 : 33.569349227514 : JumpStart); (10.0520813333333 : 33.569349227514 : JumpEnd); (10.4166666666667 : 33.569349227514 : JumpStart); (10.5833333333333 : 33.569349227514 : JumpEnd); (11.9166666666667 : 33.569349227514 : JumpStart); (12.0833333333333 : 33.569349227514 : JumpEnd); (12.25 : 33.569349227514)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Group/Group_GroupNote" />
+      <nodes>
+        <classShapeMoniker Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" />
+        <classShapeMoniker Id="be307cc4-dd5a-42b1-92fa-f00c067044b1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 34.25); (6.37142556509888 : 34.1214255650989 : JumpStart); (6.22232443490112 : 33.9723244349011 : JumpEnd); (6.125 : 33.875); (6.125 : 31.3854484049479); (5.5 : 31.3854484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Group/Group_UserProject" />
+      <nodes>
+        <classShapeMoniker Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" />
+        <classShapeMoniker Id="85eec4b0-7fb8-488f-aa49-364378850750" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 36.5962616452324); (8.875 : 36.9712616452324); (8.875 : 37.0785953776042); (11.875 : 37.0785953776042); (12.25 : 36.7035953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Group/Group_AttributeGroup" />
+      <nodes>
+        <classShapeMoniker Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" />
+        <classShapeMoniker Id="91cf2266-1769-4b3a-b619-f1ba5991a434" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.90625 : 21.9823225911458); (2.90625 : 36.1963525390625); (3.04166666666667 : 36.1963525390625 : JumpStart); (3.41145833333333 : 36.1963525390625 : JumpEnd); (6.19791666666667 : 36.1963525390625 : JumpStart); (6.39583333333333 : 36.1963525390625 : JumpEnd); (6.5 : 36.1963525390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/Project/Project_Group" />
+      <nodes>
+        <classShapeMoniker Id="0cf078d3-f33f-4bec-9b9d-756023fc4d64" />
+        <classShapeMoniker Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.617187 : 32.5978011067708); (1.617187 : 35.9643757552083); (2.59635854166667 : 35.9643757552083 : JumpStart); (2.76302520833333 : 35.9643757552083 : JumpEnd); (3.04166666666667 : 35.9643757552083 : JumpStart); (3.20833333333333 : 35.9643757552083 : JumpEnd); (3.24479166666667 : 35.9643757552083 : JumpStart); (3.41145833333333 : 35.9643757552083 : JumpEnd); (6.19791666666667 : 35.9643757552083 : JumpStart); (6.36458333333333 : 35.9643757552083 : JumpEnd); (6.5 : 35.9643757552083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/User/User_Group" />
+      <nodes>
+        <classShapeMoniker Id="a862625f-032c-49d8-85ff-d8bb801720b3" />
+        <classShapeMoniker Id="b4aaa6ba-243b-4d1c-95b3-fef7e1e1c4fe" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1733028d-d8b7-441b-b52a-2aa11528600d" absoluteBounds="9, 18.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AryaDbDataContext/UnitOfMeasure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00b6cc96-c5a7-491f-abee-2408d51d3514" absoluteBounds="9.015, 18.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9 : 18.6017976888021); (6.25 : 18.6017976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/UnitOfMeasure/UnitOfMeasure_ProjectUom" />
+      <nodes>
+        <classShapeMoniker Id="1733028d-d8b7-441b-b52a-2aa11528600d" />
+        <classShapeMoniker Id="9ac62dd7-9780-41d6-9eb3-e22151ad7bd0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.70923076923077 : 20.2804996744792); (9.70923076923077 : 20.5304996744792); (10.3046153846154 : 20.5304996744792); (10.3046153846154 : 20.2804996744792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AryaDbDataContext/UnitOfMeasure/UnitOfMeasure_UnitOfMeasure" />
+      <nodes>
+        <classShapeMoniker Id="1733028d-d8b7-441b-b52a-2aa11528600d" />
+        <classShapeMoniker Id="1733028d-d8b7-441b-b52a-2aa11528600d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="42be4a46-94f2-447c-b00b-5d6abeb6fd2e" absoluteBounds="3.25, 11, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/AryaDbDataContext/IgnoreWord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0960cc40-bed5-42ae-94ec-94787082adba" absoluteBounds="3.265, 11.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

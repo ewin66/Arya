@@ -1,0 +1,1228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA5F7C54-4C79-4AFA-8D2D-5A279BC7BC2A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arya</RootNamespace>
+    <AssemblyName>Arya</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <StartupObject>Arya.Program</StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>Custom</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ManifestCertificateThumbprint>2A4ED7420507FD4598A1207F0252A855D7468F56</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Arya_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\Arya3\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <CodeContractsAssemblyMode>0</CodeContractsAssemblyMode>
+    <PublishUrl>C:\Publish\Arya45\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>1</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://iris.codifyd.com/Arya45/</UpdateUrl>
+    <ProductName>Arya 4</ProductName>
+    <PublisherName>Codifyd</PublisherName>
+    <MinimumRequiredVersion>3.0.0.0</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>5.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>http://Arya.bytemanagers.com/AryaPrerequisites/</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>False</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsInferRequires>False</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestRequires>True</CodeContractsSuggestRequires>
+    <CodeContractsSuggestEnsures>False</CodeContractsSuggestEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsDisjunctiveRequires>False</CodeContractsDisjunctiveRequires>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>False</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsInferRequires>False</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestRequires>True</CodeContractsSuggestRequires>
+    <CodeContractsSuggestEnsures>False</CodeContractsSuggestEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsDisjunctiveRequires>False</CodeContractsDisjunctiveRequires>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestBuild|AnyCPU'">
+    <OutputPath>bin\TestBuild\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestBuild|x86'">
+    <OutputPath>bin\x86\TestBuild\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestBuild|x64'">
+    <OutputPath>bin\x64\TestBuild\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalBuild|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\LocalBuild\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalBuild|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\LocalBuild\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalBuild|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\LocalBuild\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CsvHelper.2.5.0\lib\net40-client\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Fasterflect, Version=2.1.3.0, Culture=neutral, PublicKeyToken=38d18473284c1ca7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\fasterflect.2.1.3\lib\net40\Fasterflect.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeHandFilters, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\FreeHandFilters.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit">
+      <HintPath>..\packages\LinqKit.1.0\lib\35\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler, Version=2.2.0.18504, Culture=neutral, PublicKeyToken=0d013ddd5178a2ae, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\TaskScheduler.2.2.0\lib\4\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="NHunspell">
+      <HintPath>..\packages\NHunspell.1.1.1\lib\net\NHunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="Omu.ValueInjecter, Version=2.3.3.0, Culture=neutral, PublicKeyToken=c7694541b0ac80e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\valueinjecter.2.3.3\lib\net35\Omu.ValueInjecter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converters\UserPreferenceAttributeOrderConverter.cs" />
+    <Compile Include="Data\AttributeColumn.cs" />
+    <Compile Include="Data\AttributeGroup.cs" />
+    <Compile Include="Data\AttributeMetaData.cs" />
+    <Compile Include="Data\AttributeMetaInfo.cs" />
+    <Compile Include="Data\CharacterMapFromXsd.cs" />
+    <Compile Include="Data\DerivedTaxonomy.cs" />
+    <Compile Include="Data\EntityDataNote.cs" />
+    <Compile Include="Data\Group.cs" />
+    <Compile Include="Data\GroupNote.cs" />
+    <Compile Include="Data\IgnoreWord.cs" />
+    <Compile Include="Data\ListOfValue.cs" />
+    <Compile Include="Data\ProjectDictionary.cs" />
+    <Compile Include="Data\ProjectUom.cs" />
+    <Compile Include="Data\Remark.cs" />
+    <Compile Include="Data\Role.cs" />
+    <Compile Include="Data\SchemaNote.cs" />
+    <Compile Include="Data\SkuGroup.cs" />
+    <Compile Include="Data\SkuLink.cs" />
+    <Compile Include="Data\SkuState.cs" />
+    <Compile Include="Data\State.cs" />
+    <Compile Include="Data\Step\StepSerializableClasses.Extension.cs" />
+    <Compile Include="Data\Step\StepSerializableClasses.FromXsd.cs" />
+    <Compile Include="Data\Task.cs" />
+    <Compile Include="Data\TaxonomyMetaData.cs" />
+    <Compile Include="Data\TaxonomyMetaInfo.cs" />
+    <Compile Include="Data\TaxonomyNote.cs" />
+    <Compile Include="Data\UIObject.cs" />
+    <Compile Include="Data\UnitOfMeasure.cs" />
+    <Compile Include="Data\UserProjectsPreferences.cs" />
+    <Compile Include="Data\Workflow.cs" />
+    <Compile Include="Framework4\Browser\BrowserHelper.cs" />
+    <Compile Include="Framework4\Browser\HtmlTemplates\ImagesUrlTemplate.cs" />
+    <Compile Include="Framework4\Browser\HtmlTemplates\ImageUrlTemplate.cs" />
+    <Compile Include="Framework4\Browser\HtmlTemplates\Template.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorkerForInvalidValues.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorkerForMetrics.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorkerForAryaXml.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorkerForSkuViewFormatFiles.cs" />
+    <Compile Include="Framework4\State\Data.cs" />
+    <Compile Include="Framework4\State\Forms.cs" />
+    <Compile Include="Framework4\State\Registry.cs" />
+    <Compile Include="FrmAttributeFarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttributeFarm.Designer.cs">
+      <DependentUpon>FrmAttributeFarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuildView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuildView.Designer.cs">
+      <DependentUpon>FrmBuildView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMetaAttributeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMetaAttributeView.Designer.cs">
+      <DependentUpon>FrmMetaAttributeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotes.Designer.cs">
+      <DependentUpon>FrmNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckpoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckpoint.Designer.cs">
+      <DependentUpon>FrmCheckpoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportDataNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportDataNew.Designer.cs">
+      <DependentUpon>FrmExportDataNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIntersection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIntersection.Designer.cs">
+      <DependentUpon>FrmIntersection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListOfValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListOfValues.Designer.cs">
+      <DependentUpon>FrmListOfValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSkuGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSkuGroups.Designer.cs">
+      <DependentUpon>FrmSkuGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSkuLinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSkuLinks.Designer.cs">
+      <DependentUpon>FrmSkuLinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSkuLinksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSkuLinksView.Designer.cs">
+      <DependentUpon>FrmSkuLinksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpellCheckCustomDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpellCheckCustomDictionary.Designer.cs">
+      <DependentUpon>FrmSpellCheckCustomDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitOfMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitOfMeasure.Designer.cs">
+      <DependentUpon>FrmUnitOfMeasure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPreferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPreferences.Designer.cs">
+      <DependentUpon>FrmUserPreferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWorkflow.Designer.cs">
+      <DependentUpon>FrmWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\AssetCache.cs" />
+    <Compile Include="HelperClasses\AttributeListSort.cs" />
+    <Compile Include="HelperClasses\BaseUnitConversion.cs" />
+    <Compile Include="HelperClasses\Change.cs" />
+    <Compile Include="Data\Attribute.cs" />
+    <Compile Include="Data\DerivedAttribute.cs" />
+    <Compile Include="Data\EntityData.cs" />
+    <Compile Include="Data\EntityInfo.cs" />
+    <Compile Include="Data\Project.cs" />
+    <Compile Include="Data\SchemaData.cs" />
+    <Compile Include="Data\SchemaInfo.cs" />
+    <Compile Include="Data\SchemaMetaData.cs" />
+    <Compile Include="Data\SchemaMetaInfo.cs" />
+    <Compile Include="Data\Sku.cs" />
+    <Compile Include="Data\SkuDataDbDataContext.cs" />
+    <Compile Include="Data\SkuInfo.cs" />
+    <Compile Include="Data\TaxonomyData.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\UserProject.cs" />
+    <Compile Include="HelperClasses\CrossListCriteria.cs" />
+    <Compile Include="HelperClasses\Diagnostics.cs" />
+    <Compile Include="HelperClasses\DisplayStyle.cs" />
+    <Compile Include="HelperClasses\DrawingControl.cs" />
+    <Compile Include="Framework4\ComponentModel\TaxonomyCollectionConverter.cs" />
+    <Compile Include="Framework4\ComponentModel\TaxonomyConverter.cs" />
+    <Compile Include="Framework4\ComponentModel\ExtendedTaxonomyInfo.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorker.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorkerForAttributeValueFillRate.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorkerForReviewFiles.cs" />
+    <Compile Include="Framework4\IO\Exports\ExportWorkerForSchema.cs" />
+    <Compile Include="Framework4\Collections\TaxonomyCollection.cs" />
+    <Compile Include="Framework4\ComponentModel\TaxonomyCollectionPropertyDescriptor.cs" />
+    <Compile Include="Framework4\UI\TypeEditors\TaxonomyEditor.cs" />
+    <Compile Include="FrmAttributeBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttributeBuilder.Designer.cs">
+      <DependentUpon>FrmAttributeBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSchemaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSchemaView.Designer.cs">
+      <DependentUpon>FrmSchemaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCharacterMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCharacterMap.Designer.cs">
+      <DependentUpon>FrmCharacterMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\CustomFilters.cs" />
+    <Compile Include="HelperClasses\FillRate.cs" />
+    <Compile Include="HelperClasses\JavascriptSkuViewObject.cs" />
+    <Compile Include="HelperClasses\Login.cs" />
+    <Compile Include="HelperClasses\MSCFillRateHelper.cs" />
+    <Compile Include="HelperClasses\Query.cs" />
+    <Compile Include="HelperClasses\SortableBindingList.cs" />
+    <Compile Include="HelperClasses\Validate.cs" />
+    <Compile Include="HelperClasses\XMLOps.cs" />
+    <Compile Include="HelperForms\FrmAddToWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmAddToWorkflow.Designer.cs">
+      <DependentUpon>FrmAddToWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmAdminView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmAdminView.Designer.cs">
+      <DependentUpon>FrmAdminView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFindReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFindReplace.Designer.cs">
+      <DependentUpon>FrmFindReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryView.Designer.cs">
+      <DependentUpon>FrmQueryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmCloneOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmCloneOptions.Designer.cs">
+      <DependentUpon>FrmCloneOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmColorRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmColorRules.Designer.cs">
+      <DependentUpon>FrmColorRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\AryaTools.cs" />
+    <Compile Include="HelperClasses\XmlColor.cs" />
+    <Compile Include="HelperForms\FrmCreateSkuGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmCreateSkuGroup.Designer.cs">
+      <DependentUpon>FrmCreateSkuGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmGroupManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmGroupManager.Designer.cs">
+      <DependentUpon>FrmGroupManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmNewSkus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmNewSkus.Designer.cs">
+      <DependentUpon>FrmNewSkus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmNewUser.Designer.cs">
+      <DependentUpon>FrmNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmProjectManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmProjectManager.Designer.cs">
+      <DependentUpon>FrmProjectManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmRemark.Designer.cs">
+      <DependentUpon>FrmRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TaxonomyInfo.cs" />
+    <Compile Include="FrmImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportData.Designer.cs">
+      <DependentUpon>FrmImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAttributeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttributeView.Designer.cs">
+      <DependentUpon>FrmAttributeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmSpellCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmSpellCheck.Designer.cs">
+      <DependentUpon>FrmSpellCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\FrmWaitScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\FrmWaitScreen.Designer.cs">
+      <DependentUpon>FrmWaitScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrowser.Designer.cs">
+      <DependentUpon>FrmBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForms\frmFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\frmFilter.Designer.cs">
+      <DependentUpon>frmFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTree.Designer.cs">
+      <DependentUpon>FrmTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SkuDataDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkuDataDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\TaxAttValueCalculator.cs" />
+    <Compile Include="SpellCheck\ConsecutiveWordChecker.cs" />
+    <Compile Include="SpellCheck\DoubleSpaceChecker.cs" />
+    <Compile Include="SpellCheck\IGrammerRule.cs" />
+    <Compile Include="SpellCheck\ISpell.cs" />
+    <Compile Include="SpellCheck\SpellTerm.cs" />
+    <Compile Include="SpellCheck\SpellCheckEntity.cs" />
+    <Compile Include="SpellCheck\SpellChecker.cs" />
+    <Compile Include="SpellCheck\SpellCheckerFactory.cs" />
+    <Compile Include="SpellCheck\SpellCheckIntermediate.cs" />
+    <Compile Include="UserControls\AttributeFarmGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AttributeFarmGridView.designer.cs">
+      <DependentUpon>AttributeFarmGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BuildDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BuildDataGridView.Designer.cs">
+      <DependentUpon>BuildDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EntityDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EntityDataGridView.Designer.cs">
+      <DependentUpon>EntityDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="HelperForms\frmSelectProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForms\frmSelectProject.Designer.cs">
+      <DependentUpon>frmSelectProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\MetaAttributeDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MetaAttributeDataGridView.Designer.cs">
+      <DependentUpon>MetaAttributeDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PermissionsManagerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PermissionsManagerControl.Designer.cs">
+      <DependentUpon>PermissionsManagerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RolesManagerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RolesManagerControl.Designer.cs">
+      <DependentUpon>RolesManagerControl.cs</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Libraries\DataGridViewAutoFilter.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Libraries\FreeHandFilters.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Libraries\ICSharpCode.TextEditor.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Libraries\NCalc.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Libraries\ObjectListView.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="FrmMetaAttributeView.resx">
+      <DependentUpon>FrmMetaAttributeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpellCheckCustomDictionary.resx">
+      <DependentUpon>FrmSpellCheckCustomDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitOfMeasure.resx">
+      <DependentUpon>FrmUnitOfMeasure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPreferences.resx">
+      <DependentUpon>FrmUserPreferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWorkflow.resx">
+      <DependentUpon>FrmWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmAddToWorkflow.resx">
+      <DependentUpon>FrmAddToWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmNewSkus.resx">
+      <DependentUpon>FrmNewSkus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmNewUser.resx">
+      <DependentUpon>FrmNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmProjectManager.resx">
+      <DependentUpon>FrmProjectManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmSpellCheck.resx">
+      <DependentUpon>FrmSpellCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MetaAttributeDataGridView.resx">
+      <DependentUpon>MetaAttributeDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PermissionsManagerControl.resx">
+      <DependentUpon>PermissionsManagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RolesManagerControl.resx">
+      <DependentUpon>RolesManagerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Arya.Data.Workflow.datasource" />
+    <Content Include="Hunspellx64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Hunspellx86.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ArialUnicode.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\bullet_green.png" />
+    <None Include="Resources\bullet_yellow.png" />
+    <None Include="Resources\bullet_red.png" />
+    <None Include="Resources\FreeSans.ttf" />
+    <None Include="Resources\groupIcon.ico" />
+    <None Include="Resources\Warning_icon.png" />
+    <None Include="Properties\DataSources\Arya.Data.Attribute.datasource" />
+    <None Include="Properties\DataSources\Arya.Data.CheckPointInfo.datasource" />
+    <None Include="Resources\LoadingIcon.bmp" />
+    <None Include="Resources\LoadingIcon.gif" />
+    <None Include="Resources\ico_bulb.gif" />
+    <None Include="Resources\ui_check_box_uncheck.ico" />
+    <None Include="Resources\ui_check_box.ico" />
+    <None Include="Resources\ui_check_box_mix.ico" />
+    <None Include="Resources\user.ico" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\AddIcon.jpg" />
+    <None Include="Resources\FilterDelete.bmp" />
+    <None Include="Resources\filter_delete.gif" />
+    <None Include="Resources\edit-clear.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\link_ico.ico" />
+    <None Include="Properties\DataSources\Arya.Data.Remark.datasource" />
+    <None Include="Resources\menu_dropdown.png" />
+    <None Include="Resources\pin_black.png" />
+    <None Include="Resources\project.png" />
+    <None Include="Resources\unpin.png" />
+    <None Include="Resources\placeholderNode.png" />
+    <None Include="Resources\intermediateNode.png" />
+    <None Include="Resources\derivedNode.png" />
+    <None Include="Resources\leafNode.png" />
+    <None Include="Resources\hourglass.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\loading.gif" />
+    <EmbeddedResource Include="FrmAttributeFarm.resx">
+      <DependentUpon>FrmAttributeFarm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuildView.resx">
+      <DependentUpon>FrmBuildView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotes.resx">
+      <DependentUpon>FrmNotes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckpoint.resx">
+      <DependentUpon>FrmCheckpoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportDataNew.resx">
+      <DependentUpon>FrmExportDataNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIntersection.resx">
+      <DependentUpon>FrmIntersection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListOfValues.resx">
+      <DependentUpon>FrmListOfValues.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSkuGroups.resx">
+      <DependentUpon>FrmSkuGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSkuLinks.resx">
+      <DependentUpon>FrmSkuLinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSkuLinksView.resx">
+      <DependentUpon>FrmSkuLinksView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmCloneOptions.resx">
+      <DependentUpon>FrmCloneOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmCreateSkuGroup.resx">
+      <DependentUpon>FrmCreateSkuGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmGroupManager.resx">
+      <DependentUpon>FrmGroupManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmRemark.resx">
+      <DependentUpon>FrmRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CharacterMap.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Resources\attributes.png" />
+    <None Include="Resources\exportTab.png" />
+    <EmbeddedResource Include="Resources\FilterGrammer.cgt" />
+    <None Include="Resources\slice.png" />
+    <None Include="Resources\color.png" />
+    <None Include="Resources\close.png" />
+    <EmbeddedResource Include="FrmAttributeBuilder.resx">
+      <DependentUpon>FrmAttributeBuilder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSchemaView.resx">
+      <DependentUpon>FrmSchemaView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCharacterMap.resx">
+      <DependentUpon>FrmCharacterMap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmAdminView.resx">
+      <DependentUpon>FrmAdminView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFindReplace.resx">
+      <DependentUpon>FrmFindReplace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportData.resx">
+      <DependentUpon>FrmImportData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttributeView.resx">
+      <DependentUpon>FrmAttributeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryView.resx">
+      <DependentUpon>FrmQueryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmColorRules.resx">
+      <DependentUpon>FrmColorRules.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\FrmWaitScreen.resx">
+      <DependentUpon>FrmWaitScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBrowser.resx">
+      <DependentUpon>FrmBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\frmFilter.resx">
+      <DependentUpon>frmFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTree.resx">
+      <DependentUpon>FrmTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data\SkuDataDb.dbml.layout">
+      <DependentUpon>SkuDataDb.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="UserControls\BuildDataGridView.resx">
+      <DependentUpon>BuildDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EntityDataGridView.resx">
+      <DependentUpon>EntityDataGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForms\frmSelectProject.resx">
+      <DependentUpon>frmSelectProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="FrmSkuView.resx">
+      <DependentUpon>FrmSkuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SchemaDataGridView.resx">
+      <DependentUpon>SchemaDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TaxonomyTreeView.resx">
+      <DependentUpon>TaxonomyTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmSkuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSkuView.Designer.cs">
+      <DependentUpon>FrmSkuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\SchemaAttribute.cs" />
+    <Compile Include="UserControls\SchemaDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SchemaDataGridView.Designer.cs">
+      <DependentUpon>SchemaDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TaxonomyTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TaxonomyTreeView.Designer.cs">
+      <DependentUpon>TaxonomyTreeView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookOpened.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\bookClosed.png" />
+    <None Include="Resources\calculatedAttribute.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\move.png" />
+    <None Include="Resources\reorder.png" />
+    <None Include="Resources\sortAscending.png" />
+    <None Include="Resources\sortDescending.png" />
+    <None Include="Resources\StatusBackground.bmp" />
+    <None Include="Resources\webpage.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Data\SkuDataDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>SkuDataDb.designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arya.Framework.Common\Arya.Framework.Common.csproj">
+      <Project>{ff8d2d4e-9dd8-4d99-ad46-89031ac0d0e2}</Project>
+      <Name>Arya.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arya.Framework\Arya.Framework.csproj">
+      <Project>{712880bc-f026-4f35-89ce-d4fc0af6304b}</Project>
+      <Name>Arya.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Framework4\Browser\CSS\Colorbox\colorbox.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\Colorbox\images\controls.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\Colorbox\images\loading.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\ImageAreaSelect\border-anim-h.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\ImageAreaSelect\border-anim-v.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\ImageAreaSelect\border-h.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\ImageAreaSelect\border-v.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\ImageAreaSelect\imgareaselect-animated.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Framework4\Browser\CSS\ImageAreaSelect\imgareaselect-default.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AryaLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.SqlServer.ConnectionInfo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Diagnostics.STrace">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Dmf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.Sdk.Sfc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SmoMetadataProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SqlParser">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.RegSvrEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ServiceBrokerEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Smo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SmoExtended">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /y "$(SolutionDir)packages\NHunspell.1.1.1\native\*.*" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

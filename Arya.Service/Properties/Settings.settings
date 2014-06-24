@@ -1,0 +1,28 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Arya.Service.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NumberOfSimultaneousJobs" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="JobProcessorDllLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Plugins</Value>
+    </Setting>
+    <Setting Name="ArgumentFileBasePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\BmiFtp\PSO\Internal\AryaWorkers</Value>
+    </Setting>
+    <Setting Name="JobServiceRunIntervalInSeconds" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="PortalLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://dev.empirisense.com/AryaPortalAlpha</Value>
+    </Setting>
+    <Setting Name="AryaServicesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=dev.empirisense.com;Initial Catalog=aryaServices;Persist Security Info=True;User ID=aryaUser;Password=arya$tark&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=dev.empirisense.com;Initial Catalog=aryaServices;Persist Security Info=True;User ID=aryaUser;Password=arya$tark</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

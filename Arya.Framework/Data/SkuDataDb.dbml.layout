@@ -1,0 +1,809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20, 54.375" name="SkuDataDb">
+  <DataContextMoniker Name="/SkuDataDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7c861e00-2108-45e6-bcfe-605d6259e74c" absoluteBounds="3.5, 32.5, 2, 2.7324039713541595">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Attribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="871f1de9-c487-4a6b-9c1b-5b600aa86102" absoluteBounds="3.5150000000000006, 32.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cef87854-972b-4aca-86bf-2dd45780de5d" absoluteBounds="3.75, 21.875, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Checkpoint" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75961cb4-b9ba-4e6f-859b-38d9eb4d34d9" absoluteBounds="3.7650000000000006, 22.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5226cc58-843a-4a28-813f-ad7937af36b7" absoluteBounds="9.25, 36.125, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/SkuDataDbDataContext/ColumnProperty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a9ece73-7827-4e4a-b8ec-a1563575f386" absoluteBounds="9.265, 36.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e0171ab-723e-4432-936a-ec1e2342cc3a" absoluteBounds="9.25, 30, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/DerivedAttribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="944e72dd-8497-4f71-99a9-cc485283487f" absoluteBounds="9.265, 30.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40b25132-8cdd-4848-8b77-bd7f47bc9adc" absoluteBounds="6.5, 25.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/DerivedTaxonomy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33aab53a-b40b-42ea-aeab-c0e729d93523" absoluteBounds="6.5150000000000006, 25.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" absoluteBounds="12, 31.375, 2, 4.4631168619791595">
+      <DataClassMoniker Name="/SkuDataDbDataContext/EntityData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf734ea0-b2b4-4f09-b035-dbebb4c77ed5" absoluteBounds="12.015, 31.835, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c19c8815-0272-4eb7-a946-27a7e85aa8cf" absoluteBounds="14.75, 33.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/EntityDataNote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09589e4d-c0d7-4285-92d2-864a0c02fb6d" absoluteBounds="14.765, 34.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d17a229-9e4e-4306-ac1e-a0fd0ad511cc" absoluteBounds="6.25, 29.25, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/EntityInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f77fff25-5b59-4caf-aed9-b55969caf9fc" absoluteBounds="6.2650000000000006, 29.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" absoluteBounds="3.5, 50.75, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3797dfed-22d3-4c3e-8d4c-1663bf8092b3" absoluteBounds="3.5150000000000006, 51.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="417eeb12-8926-4031-adfb-f9da4fed868f" absoluteBounds="9.25, 46.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/GroupNote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c75838c5-b86d-4610-a2f4-a759e3a72eb9" absoluteBounds="9.265, 46.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8385009b-4c68-4103-897d-c4e45362810f" absoluteBounds="15, 30.25, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/ListOfValue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="801f554a-3633-4a50-83b4-8a0fc9ad432d" absoluteBounds="15.015, 30.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ba4568a-7b85-419a-95af-6a6821eeef36" absoluteBounds="1, 23.25, 2, 5.2323225911458309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0c03663-95c5-4d8d-9437-2d24eaa98b02" absoluteBounds="1.0150000000000006, 23.71, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8e0f139e-4256-418e-a151-579b1bddc57c" absoluteBounds="6.5, 20.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SkuDataDbDataContext/ProjectUom" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de81791b-f397-4634-96e3-97180e9c655b" absoluteBounds="6.515, 21.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2613c59-e383-4057-877c-e6547a5a13be" absoluteBounds="9.25, 23.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Remark" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a34a21d5-56c5-44a1-9a78-85cbb2ace4ff" absoluteBounds="9.265, 24.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c84b8a96-fe45-4c63-9b7a-bba655dff20b" absoluteBounds="6.875, 52.375, 2, 1.7708968098958167">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6aefa194-b6ac-4bf7-ad9d-3aadd39e532b" absoluteBounds="6.8900000005960464, 52.83500000089407, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a57f5c4d-53ec-4ae2-bac5-60f975ed8834" absoluteBounds="15, 39.875, 2, 3.3093082682291737">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SchemaData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24e007b1-78e5-422a-8bb0-e3f52dd778cc" absoluteBounds="15.015, 40.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a10f848-9a3d-4c22-924f-3754f6af7817" absoluteBounds="9.25, 33.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SchemaInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4fefec4c-5aac-4073-b551-f339c2d448fe" absoluteBounds="9.265, 33.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f196630e-fbca-42a3-bf76-5a0d07219666" absoluteBounds="17.75, 32.125, 2, 2.7324039713541737">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SchemaMetaData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2ccad9c-bc13-4835-bbc6-6623e72ff0cf" absoluteBounds="17.765, 32.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96966ad1-c98b-4e39-9d04-ad176d6bbc58" absoluteBounds="12, 29.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SchemaMetaInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16f8cd2c-e617-4c8e-94ee-4306d364d426" absoluteBounds="12.015, 29.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="464081a5-4616-4473-b379-7d9568351848" absoluteBounds="15, 36.625, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SchemaNote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9936361c-c4c2-4b5b-ab87-f5a774b86225" absoluteBounds="15.015, 37.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af2dfafa-608a-437f-989b-c4c1f8091c74" absoluteBounds="6.25, 40.75, 2, 1.5785953776041737">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SkuGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54db4070-dfca-4b50-b9ed-333ea0d103a4" absoluteBounds="6.2650000000000006, 41.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="063702d6-d0ec-41fb-b7c7-18a922c335ed" absoluteBounds="9.25, 43.5, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SkuGroupData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea311e36-873b-49d8-99f6-e01a393d6625" absoluteBounds="9.265, 43.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5308231f-dc5b-4662-a3f9-807a333468d4" absoluteBounds="12.25, 40.75, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SkuInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7550dd94-86b3-4b9e-8340-ebfa4f04b985" absoluteBounds="12.265, 41.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fa8478a-4a53-41dc-b922-c56d741463f3" absoluteBounds="12.25, 36.625, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SkuLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1b8e529-1cc0-4e0c-a00d-d997ba13dcd3" absoluteBounds="12.265, 37.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1cd18916-4bc1-4ffd-bf76-471ac2b3fe43" absoluteBounds="9.25, 26.875, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/TaxonomyAttribute" />
+      <nestedChildShapes>
+        <elementListCompartment Id="944d4ce9-d96a-4b6f-9c27-18dd3ca5198e" absoluteBounds="9.265, 27.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06519fee-a042-4d84-aefc-a1789f307a04" absoluteBounds="6.5, 35.25, 2, 3.501609700520838">
+      <DataClassMoniker Name="/SkuDataDbDataContext/TaxonomyData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="578a7d6a-5768-417b-842c-94b1fbfad97b" absoluteBounds="6.5150000000000006, 35.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f23932c-a9ec-4039-8265-22193dec5112" absoluteBounds="3.75, 25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SkuDataDbDataContext/TaxonomyInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4aab02c2-e3cf-4b9f-93c1-fb502813da05" absoluteBounds="3.7650000000000006, 25.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="257d49fa-48d8-446e-8470-a4188dc8bfc5" absoluteBounds="6.5, 31.875, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/TaxonomyNote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85db45aa-b3b4-48a7-81e6-577ca623e480" absoluteBounds="6.5150000000000006, 32.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e3ca1ab-a181-472f-aa37-dd187ebd1ccf" absoluteBounds="12.125, 20.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/SkuDataDbDataContext/UIObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8652a02e-2e60-4a61-8c85-5c893e97a71e" absoluteBounds="12.14, 21.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10d449e7-b377-424d-bc0c-93feef9075e5" absoluteBounds="0.75, 35.75, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/SkuDataDbDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7f24214-5ee2-4f06-8d16-e220f53ca990" absoluteBounds="0.76500000000000057, 36.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1978b56e-6aea-4ecc-9461-189d5e7b45e2" absoluteBounds="6.25, 43.625, 2, 1.770896809895838">
+      <DataClassMoniker Name="/SkuDataDbDataContext/UserProject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d752864-375a-458b-bf84-4b1128eebdd8" absoluteBounds="6.2650000000000006, 44.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18463ea6-4bfc-49b8-b624-e31477544d63" absoluteBounds="6.25, 46.25, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/SkuDataDbDataContext/SkuState" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9144786f-0e22-4a10-97f6-f6c8d4f4b8c2" absoluteBounds="6.2650000000000006, 46.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a036eb79-147a-4062-acdc-487e32a7e42b" absoluteBounds="12, 44.875, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/State" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2895e608-bfab-4237-bb5c-04dffa855038" absoluteBounds="12.015, 45.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56b1a431-272a-4449-a99a-15eadba4d6b9" absoluteBounds="9.25, 39.125, 2, 2.7324039713541595">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Workflow" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bc27c70-ea0a-4118-a216-4141765ec5c9" absoluteBounds="9.265, 39.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 33.2940996210938); (5.76041666666667 : 33.2940996210938 : JumpStart); (5.92708333333333 : 33.2940996210938 : JumpEnd); (6.25 : 33.2940996210938); (6.25 : 34.7612939453125); (9.04166666666667 : 34.7612939453125 : JumpStart); (9.27083333333333 : 34.7612939453125 : JumpEnd); (10.25 : 34.7612939453125); (10.25 : 36.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Attribute/Attribute_ColumnProperty" />
+      <nodes>
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+        <classShapeMoniker Id="5226cc58-843a-4a28-813f-ad7937af36b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 32.5); (4.5 : 31.1386946614583); (4.94791916666667 : 31.1386946614583 : JumpStart); (5.11458583333333 : 31.1386946614583 : JumpEnd); (5.30729241666667 : 31.1386946614583 : JumpStart); (5.47395908333333 : 31.1386946614583 : JumpEnd); (5.76041666666667 : 31.1386946614583 : JumpStart); (5.92708333333333 : 31.1386946614583 : JumpEnd); (6.26041666666667 : 31.1386946614583 : JumpStart); (6.42708333333333 : 31.1386946614583 : JumpEnd); (8.79166666666667 : 31.1386946614583 : JumpStart); (9.02083333333333 : 31.1386946614583 : JumpEnd); (9.04166666666667 : 31.1386946614583 : JumpStart); (9.20833333333333 : 31.1386946614583 : JumpEnd); (9.25 : 31.1386946614583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Attribute/Attribute_DerivedAttribute" />
+      <nodes>
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+        <classShapeMoniker Id="5e0171ab-723e-4432-936a-ec1e2342cc3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 35.0593489583333); (5.76041666666667 : 35.0593489583333 : JumpStart); (5.95833333333333 : 35.0593489583333 : JumpEnd); (5.97916666666667 : 35.0593489583333 : JumpStart); (6.27083333333333 : 35.0593489583333 : JumpEnd); (8.79166666666667 : 35.0593489583333 : JumpStart); (8.95833333333333 : 35.0593489583333 : JumpEnd); (9.04166666666667 : 35.0593489583333 : JumpStart); (9.27083333333333 : 35.0593489583333 : JumpEnd); (10.1666666666667 : 35.0593489583333 : JumpStart); (10.3333333333333 : 35.0593489583333 : JumpEnd); (11.2291666666667 : 35.0593489583333 : JumpStart); (11.3958333333333 : 35.0593489583333 : JumpEnd); (11.4166666666667 : 35.0593489583333 : JumpStart); (11.7395833333333 : 35.0593489583333 : JumpEnd); (11.7447916666667 : 35.0593489583333 : JumpStart); (11.9114583333333 : 35.0593489583333 : JumpEnd); (12 : 35.0593489583333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Attribute/Attribute_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+        <classShapeMoniker Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 34.6354484049479); (14.75 : 34.6354484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/EntityData/EntityData_EntityDataNote" />
+      <nodes>
+        <classShapeMoniker Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" />
+        <classShapeMoniker Id="c19c8815-0272-4eb7-a946-27a7e85aa8cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.34375 : 30.4439925130208); (6.34375 : 34.8790689518229); (8.79166666666667 : 34.8790689518229 : JumpStart); (8.95833333333333 : 34.8790689518229 : JumpEnd); (9.04166666666667 : 34.8790689518229 : JumpStart); (9.27083333333333 : 34.8790689518229 : JumpEnd); (10.1666666666667 : 34.8790689518229 : JumpStart); (10.3333333333333 : 34.8790689518229 : JumpEnd); (11.4166666666667 : 34.8790689518229 : JumpStart); (11.5833333333333 : 34.8790689518229 : JumpEnd); (12 : 34.8790689518229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/EntityInfo/EntityInfo_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="4d17a229-9e4e-4306-ac1e-a0fd0ad511cc" />
+        <classShapeMoniker Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 51.6101943076923); (10.25 : 51.6101943076923); (10.25 : 48.2708968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_GroupNote" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="417eeb12-8926-4031-adfb-f9da4fed868f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2 : 28.4823225911458); (2 : 33.8662019856771); (2.51041841666667 : 33.8662019856771 : JumpStart); (2.67708508333333 : 33.8662019856771 : JumpEnd); (2.85416416666667 : 33.8662019856771 : JumpStart); (3.02083083333333 : 33.8662019856771 : JumpEnd); (3.5 : 33.8662019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_Attribute" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 23.4479484049479); (3.75 : 23.4479484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_Checkpoint" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="cef87854-972b-4aca-86bf-2dd45780de5d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2 : 23.25); (2 : 21.28125); (6.5 : 21.28125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_ProjectUom" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="8e0f139e-4256-418e-a151-579b1bddc57c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 25.253828285607); (11.5625 : 25.691328285607); (11.5625 : 32.2041392379557); (11.6354166666667 : 32.2041392379557 : JumpStart); (11.9114583333333 : 32.2041392379557 : JumpEnd); (12 : 32.2041392379557)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.2489336200421 : 25.2612939453125); (11.71875 : 25.9186103252704); (11.71875 : 33.9874257138672); (12 : 33.9874257138672)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_EntityData1" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 52.7364005533854); (6.875 : 52.7364005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_Role" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="c84b8a96-fe45-4c63-9b7a-bba655dff20b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 25.2175713670373); (11.9375 : 25.9050713670373); (11.9375 : 39.3125); (14.4867297692308 : 39.3125); (15.0492297692308 : 39.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_SchemaData" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="a57f5c4d-53ec-4ae2-bac5-60f975ed8834" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 25.2399653461538); (11.875 : 25.8649653461538); (11.875 : 39.375); (14.5 : 39.375); (15 : 39.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_SchemaData1" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="a57f5c4d-53ec-4ae2-bac5-60f975ed8834" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.25 : 33.125); (10.25 : 31.8958968098958); (11.5 : 31.8958968098958); (11.5 : 31.25); (11.5416666666667 : 31.25 : JumpStart); (11.8020833333333 : 31.25 : JumpEnd); (14.2916666666667 : 31.25 : JumpStart); (14.4583333333333 : 31.25 : JumpEnd); (14.625 : 31.25); (14.625 : 31.6421506273804); (15 : 31.6421506273804)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/SchemaInfo/SchemaInfo_ListOfValue" />
+      <nodes>
+        <classShapeMoniker Id="4a10f848-9a3d-4c22-924f-3754f6af7817" />
+        <classShapeMoniker Id="8385009b-4c68-4103-897d-c4e45362810f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 34.502761905649); (11.65625 : 34.909011905649); (11.65625 : 39.5); (14.5757692307692 : 39.5); (15 : 39.9242307692308)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/SchemaInfo/SchemaInfo_SchemaData" />
+      <nodes>
+        <classShapeMoniker Id="4a10f848-9a3d-4c22-924f-3754f6af7817" />
+        <classShapeMoniker Id="a57f5c4d-53ec-4ae2-bac5-60f975ed8834" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 34.2512479654948); (9.25 : 34.2512479654948)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Attribute/Attribute_SchemaInfo" />
+      <nodes>
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+        <classShapeMoniker Id="4a10f848-9a3d-4c22-924f-3754f6af7817" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 24.5176991334135); (18.75 : 24.5176991334135); (18.75 : 32.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_SchemaMetaData" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="f196630e-fbca-42a3-bf76-5a0d07219666" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 24.8703012001202); (18.2187475 : 24.8703012001202); (18.2187475 : 32.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_SchemaMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="f196630e-fbca-42a3-bf76-5a0d07219666" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 29.65625); (19.2812525 : 29.65625); (19.2812525 : 32.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/SchemaMetaInfo/SchemaMetaInfo_SchemaMetaData" />
+      <nodes>
+        <classShapeMoniker Id="96966ad1-c98b-4e39-9d04-ad176d6bbc58" />
+        <classShapeMoniker Id="f196630e-fbca-42a3-bf76-5a0d07219666" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.0312525 : 32.5); (5.0312525 : 29.15625); (5.30729241666667 : 29.15625 : JumpStart); (5.47395908333333 : 29.15625 : JumpEnd); (5.76041666666667 : 29.15625 : JumpStart); (5.92708333333333 : 29.15625 : JumpEnd); (8.79166666666667 : 29.15625 : JumpStart); (9.02083333333333 : 29.15625 : JumpEnd); (9.04166666666667 : 29.15625 : JumpStart); (9.27083333333333 : 29.15625 : JumpEnd); (11.6354166666667 : 29.15625 : JumpStart); (11.8020833333333 : 29.15625 : JumpEnd); (12 : 29.15625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Attribute/Attribute_SchemaMetaInfo" />
+      <nodes>
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+        <classShapeMoniker Id="96966ad1-c98b-4e39-9d04-ad176d6bbc58" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.79181646634615 : 33.125); (9.95662020766382 : 33.0912873892005 : JumpStart); (10.1199054938549 : 33.0578853968754 : JumpEnd); (11.625 : 32.75); (11.625 : 29.8650239726563); (11.6354166666667 : 29.8650239726563 : JumpStart); (11.8020833333333 : 29.8650239726563 : JumpEnd); (12 : 29.8650239726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/SchemaInfo/SchemaInfo_SchemaMetaInfo" />
+      <nodes>
+        <classShapeMoniker Id="4a10f848-9a3d-4c22-924f-3754f6af7817" />
+        <classShapeMoniker Id="96966ad1-c98b-4e39-9d04-ad176d6bbc58" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 34.487832586238); (11.4393166672756 : 34.666012978968 : JumpStart); (11.5606833327244 : 34.7802404288021 : JumpEnd); (11.78125 : 34.987832586238); (11.78125 : 36.1875); (14.625 : 36.1875); (16.3084925155248 : 36.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/SchemaInfo/SchemaInfo_SchemaNote" />
+      <nodes>
+        <classShapeMoniker Id="4a10f848-9a3d-4c22-924f-3754f6af7817" />
+        <classShapeMoniker Id="464081a5-4616-4473-b379-7d9568351848" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 50.7838451538462); (6.125 : 50.1588451538462); (6.125 : 41.5392976888021); (6.25 : 41.5392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_SkuGroup" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="af2dfafa-608a-437f-989b-c4c1f8091c74" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.4687475 : 50.75); (4.4687475 : 43.53125); (5.72135791666667 : 43.53125 : JumpStart); (5.88802458333333 : 43.53125 : JumpEnd); (5.94791666666667 : 43.53125 : JumpStart); (6.20833333333333 : 43.53125 : JumpEnd); (9.25 : 43.53125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_SkuGroupData" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="063702d6-d0ec-41fb-b7c7-18a922c335ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.21907498122 : 25.2612939453125); (11.2648244688199 : 25.3070434329124 : JumpStart); (11.3826755990176 : 25.4248945631101 : JumpEnd); (11.828125 : 25.8703439640925); (11.828125 : 41.8277498372396); (11.9791666666667 : 41.8277498372396 : JumpStart); (12.1458333333333 : 41.8277498372396 : JumpEnd); (12.25 : 41.8277498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="5308231f-dc5b-4662-a3f9-807a333468d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.9687475 : 32.5); (3.9687475 : 27.8565991210938); (4.30533582291667 : 27.8565991210938 : JumpStart); (4.47200248958333 : 27.8565991210938 : JumpEnd); (5.30729241666667 : 27.8565991210938 : JumpStart); (5.47395908333333 : 27.8565991210938 : JumpEnd); (5.76041666666667 : 27.8565991210938 : JumpStart); (5.92708333333333 : 27.8565991210938 : JumpEnd); (8.85416666666667 : 27.8565991210938 : JumpStart); (9.02083333333333 : 27.8565991210938 : JumpEnd); (9.25 : 27.8565991210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Attribute/Attribute_TaxonomyAttribute" />
+      <nodes>
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+        <classShapeMoniker Id="1cd18916-4bc1-4ffd-bf76-471ac2b3fe43" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.30438437785457 : 25.2612939453125); (9.03125 : 25.5344283231671); (9.03125 : 37.8113294042969); (8.5 : 37.8113294042969)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_TaxonomyData" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="06519fee-a042-4d84-aefc-a1789f307a04" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 25.2388999661959); (9.125 : 25.3638999661959); (9.125 : 36.9527503372396); (8.5 : 36.9527503372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Remark/Remark_TaxonomyData1" />
+      <nodes>
+        <classShapeMoniker Id="c2613c59-e383-4057-877c-e6547a5a13be" />
+        <classShapeMoniker Id="06519fee-a042-4d84-aefc-a1789f307a04" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 25.5597942069812); (5.82687586865134 : 25.9315829267615 : JumpStart); (5.86062413134866 : 26.0947969964451 : JumpEnd); (5.99943051096755 : 26.7660953776042); (8.875 : 26.7660953776042); (8.875 : 35.75); (9.06607443490112 : 35.9410744349011 : JumpStart); (9.24642556509888 : 36.1214255650989 : JumpEnd); (9.25 : 36.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_ColumnProperty" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="5226cc58-843a-4a28-813f-ad7937af36b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.38866915625 : 26.5785953776042); (4.38866915625 : 30.7913410872396); (5.30729241666667 : 30.7913410872396 : JumpStart); (5.47395908333333 : 30.7913410872396 : JumpEnd); (5.76041666666667 : 30.7913410872396 : JumpStart); (5.92708333333333 : 30.7913410872396 : JumpEnd); (9.25 : 30.7913410872396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_DerivedAttribute" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="5e0171ab-723e-4432-936a-ec1e2342cc3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 25.8181469726563); (5.76041666666667 : 25.8181469726563 : JumpStart); (5.92708333333333 : 25.8181469726563 : JumpEnd); (6.5 : 25.8181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_DerivedTaxonomy" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="40b25132-8cdd-4848-8b77-bd7f47bc9adc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.14067661633614 : 26.5785953776042); (5.30877876040261 : 26.8022185966197 : JumpStart); (5.47247273959739 : 26.833556416473 : JumpEnd); (5.76190301040261 : 26.8889653797788 : JumpStart); (5.92559698959739 : 26.9203031996321 : JumpEnd); (6.09949961313101 : 26.9535953776042); (8.9375 : 26.9535953776042); (8.9375 : 32.8125); (10.25 : 33.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_SchemaInfo" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="4a10f848-9a3d-4c22-924f-3754f6af7817" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 25.7892976888021); (5.76041666666667 : 25.7892976888021 : JumpStart); (5.92708333333333 : 25.7892976888021 : JumpEnd); (6.25 : 25.7892976888021); (6.25 : 29.0881982421875); (8.79166666666667 : 29.0881982421875 : JumpStart); (9.02083333333333 : 29.0881982421875 : JumpEnd); (9.04166666666667 : 29.0881982421875 : JumpStart); (9.27083333333333 : 29.0881982421875 : JumpEnd); (11.3125 : 29.0881982421875); (11.3125 : 40.375); (11.9791666666667 : 40.375 : JumpStart); (12.1458333333333 : 40.375 : JumpEnd); (13.25 : 40.375); (13.25 : 40.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="5308231f-dc5b-4662-a3f9-807a333468d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.13086078125 : 26.5785953776042); (5.13086078125 : 28.3786511816406); (5.30729241666667 : 28.3786511816406 : JumpStart); (5.47395908333333 : 28.3786511816406 : JumpEnd); (5.76041666666667 : 28.3786511816406 : JumpStart); (5.92708333333333 : 28.3786511816406 : JumpEnd); (8.79166666666667 : 28.3786511816406 : JumpStart); (9.02083333333333 : 28.3786511816406 : JumpEnd); (9.04166666666667 : 28.3786511816406 : JumpStart); (9.20833333333333 : 28.3786511816406 : JumpEnd); (9.25 : 28.3786511816406)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_TaxonomyAttribute" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="1cd18916-4bc1-4ffd-bf76-471ac2b3fe43" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.8710958125 : 26.5785953776042); (4.8710958125 : 32.125); (4.94791916666667 : 32.125 : JumpStart); (5.11458583333333 : 32.125 : JumpEnd); (5.30729241666667 : 32.125 : JumpStart); (5.47395908333333 : 32.125 : JumpEnd); (5.66666666666667 : 32.125 : JumpStart); (5.95833333333333 : 32.125 : JumpEnd); (6.1875 : 32.125); (6.1875 : 37.0008048502604); (6.5 : 37.0008048502604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_TaxonomyData" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="06519fee-a042-4d84-aefc-a1789f307a04" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.39062575 : 26.5785953776042); (5.39062575 : 32.25); (5.66666666666667 : 32.25 : JumpStart); (5.92708333333333 : 32.25 : JumpEnd); (6.0625 : 32.25); (6.0625 : 36.0941504251302); (6.5 : 36.0941504251302)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_TaxonomyData1" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="06519fee-a042-4d84-aefc-a1789f307a04" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 25.7892976888021); (3.75 : 25.7892976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_TaxonomyInfo" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.39062575 : 26.5785953776042); (5.39062575 : 32.15625); (6.5 : 32.15625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/TaxonomyInfo/TaxonomyInfo_TaxonomyNote" />
+      <nodes>
+        <classShapeMoniker Id="8f23932c-a9ec-4039-8265-22193dec5112" />
+        <classShapeMoniker Id="257d49fa-48d8-446e-8470-a4188dc8bfc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.046876125 : 35.75); (2.046876125 : 34.5805554785156); (2.51041841666667 : 34.5805554785156 : JumpStart); (2.67708508333333 : 34.5805554785156 : JumpEnd); (2.85416416666667 : 34.5805554785156 : JumpStart); (3.02083083333333 : 34.5805554785156 : JumpEnd); (3.5 : 34.5805554785156)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_Attribute" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="7c861e00-2108-45e6-bcfe-605d6259e74c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 36.8277498372396); (2.85416416666667 : 36.8277498372396 : JumpStart); (3.02083083333333 : 36.8277498372396 : JumpEnd); (3.625 : 36.8277498372396); (3.625 : 38.0881982421875); (5.76823041666667 : 38.0881982421875 : JumpStart); (5.93489708333333 : 38.0881982421875 : JumpEnd); (6.25 : 38.0881982421875); (6.25 : 39.2516097005208); (8.75 : 39.2516097005208); (8.75 : 38.5304996744792); (10.25 : 38.5304996744792); (10.25 : 38.2804996744792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_ColumnProperty" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="5226cc58-843a-4a28-813f-ad7937af36b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3750005 : 35.75); (1.3750005 : 32); (1.63541941666667 : 32 : JumpStart); (1.80208608333333 : 32 : JumpEnd); (1.91666666666667 : 32 : JumpStart); (2.08333333333333 : 32 : JumpEnd); (2.51041841666667 : 32 : JumpStart); (2.67708508333333 : 32 : JumpEnd); (2.85416416666667 : 32 : JumpStart); (3.02083083333333 : 32 : JumpEnd); (3.88541416666667 : 32 : JumpStart); (4.05208083333333 : 32 : JumpEnd); (4.41666666666667 : 32 : JumpStart); (4.58333333333333 : 32 : JumpEnd); (4.94791916666667 : 32 : JumpStart); (5.11458583333333 : 32 : JumpEnd); (5.30729241666667 : 32 : JumpStart); (5.47395908333333 : 32 : JumpEnd); (5.66666666666667 : 32 : JumpStart); (5.83333333333333 : 32 : JumpEnd); (5.875 : 32); (5.875 : 34.0881982421875); (5.97916666666667 : 34.0881982421875 : JumpStart); (6.14583333333333 : 34.0881982421875 : JumpEnd); (6.16666666666667 : 34.0881982421875 : JumpStart); (6.42708333333333 : 34.0881982421875 : JumpEnd); (8.54166666666667 : 34.0881982421875 : JumpStart); (8.70833333333333 : 34.0881982421875 : JumpEnd); (8.75 : 34.0881982421875); (8.75 : 33); (8.79166666666667 : 33 : JumpStart); (8.95833333333333 : 33 : JumpEnd); (9.04166666666667 : 33 : JumpStart); (9.27083333333333 : 33 : JumpEnd); (9.64166666666666 : 33 : JumpStart); (9.80833333333333 : 33 : JumpEnd); (10.1666666666667 : 33 : JumpStart); (10.4862109775641 : 33 : JumpEnd); (11.2291666666667 : 33 : JumpStart); (11.3958333333333 : 33 : JumpEnd); (11.5625 : 33); (11.5625 : 33.0957824759115); (11.6354166666667 : 33.0957824759115 : JumpStart); (11.8020833333333 : 33.0957824759115 : JumpEnd); (12 : 33.0957824759115)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_EntityData" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.59375175 : 35.75); (2.59375175 : 31.875); (2.85416416666667 : 31.875 : JumpStart); (3.02083083333333 : 31.875 : JumpEnd); (3.88541416666667 : 31.875 : JumpStart); (4.05208083333333 : 31.875 : JumpEnd); (5.30729241666667 : 31.875 : JumpStart); (5.47395908333333 : 31.875 : JumpEnd); (5.75 : 31.875); (5.75 : 34.4631982421875); (5.76041666666667 : 34.4631982421875 : JumpStart); (5.92708333333333 : 34.4631982421875 : JumpEnd); (6.16666666666667 : 34.4631982421875 : JumpStart); (6.42708333333333 : 34.4631982421875 : JumpEnd); (8.625 : 34.4631982421875); (8.625 : 32.875); (8.79166666666667 : 32.875 : JumpStart); (8.95833333333333 : 32.875 : JumpEnd); (9.04166666666667 : 32.875 : JumpStart); (9.28333333333333 : 32.875 : JumpEnd); (10.1666666666667 : 32.875 : JumpStart); (10.3333333333333 : 32.875 : JumpEnd); (10.930605488782 : 32.875 : JumpStart); (11.0972721554487 : 32.875 : JumpEnd); (11.5 : 32.875); (11.5 : 33.9874257138672); (12 : 33.9874257138672)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_EntityData1" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="68b14f08-40cd-4316-8bec-c9841e3bf7d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.546876625 : 35.75); (1.546876625 : 35.4824039713542); (2.85416416666667 : 35.4824039713542 : JumpStart); (3.02083083333333 : 35.4824039713542 : JumpEnd); (5.875 : 35.4824039713542); (5.875 : 34.6362939453125); (6.16666666666667 : 34.6362939453125 : JumpStart); (6.33333333333333 : 34.6362939453125 : JumpEnd); (9.04166666666667 : 34.6362939453125 : JumpStart); (9.27083333333333 : 34.6362939453125 : JumpEnd); (11.3001987063302 : 34.6362939453125 : JumpStart); (11.4668653729968 : 34.6362939453125 : JumpEnd); (11.5 : 34.6362939453125); (11.5 : 35.9631168619792); (11.5729166666667 : 35.9631168619792 : JumpStart); (11.8333333333333 : 35.9631168619792 : JumpEnd); (14.375 : 35.9631168619792); (14.375 : 34.6354484049479); (14.75 : 34.6354484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_EntityDataNote" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="c19c8815-0272-4eb7-a946-27a7e85aa8cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.600585375 : 37.9054996744792); (1.600585375 : 51.9239005533854); (3.5 : 51.9239005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_Group" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.235349625 : 37.9054996744792); (1.235349625 : 46); (4.77213385416667 : 46 : JumpStart); (4.93880052083333 : 46 : JumpEnd); (5.94791666666667 : 46 : JumpStart); (6.20833333333333 : 46 : JumpEnd); (8.875 : 46); (8.875 : 47.3854484049479); (9.25 : 47.3854484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_GroupNote" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="417eeb12-8926-4031-adfb-f9da4fed868f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.03124825 : 35.75); (1.03124825 : 31.75); (2.85416416666667 : 31.75 : JumpStart); (3.02083083333333 : 31.75 : JumpEnd); (8.75 : 31.75); (8.75 : 32.5208968098958); (11.4375 : 32.5208968098958); (11.4375 : 31.125); (11.6354166666667 : 31.125 : JumpStart); (11.8020833333333 : 31.125 : JumpEnd); (14.375 : 31.125); (14.375 : 32.5358307316589); (15 : 32.5358307316589)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_ListOfValue" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="8385009b-4c68-4103-897d-c4e45362810f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.71875275 : 35.75); (1.71875275 : 31.625); (2.85416416666667 : 31.625 : JumpStart); (3.02083083333333 : 31.625 : JumpEnd); (3.88541416666667 : 31.625 : JumpStart); (4.05208083333333 : 31.625 : JumpEnd); (5.30729241666667 : 31.625 : JumpStart); (5.47395908333333 : 31.625 : JumpEnd); (5.76041666666667 : 31.625 : JumpStart); (5.92708333333333 : 31.625 : JumpEnd); (6.26041666666667 : 31.625 : JumpStart); (6.42708333333333 : 31.625 : JumpEnd); (8.625 : 31.625); (8.625 : 32.0208968098958); (8.66666666666667 : 32.0208968098958 : JumpStart); (9.02083333333333 : 32.0208968098958 : JumpEnd); (9.04166666666667 : 32.0208968098958 : JumpStart); (9.27083333333333 : 32.0208968098958 : JumpEnd); (10.1666666666667 : 32.0208968098958 : JumpStart); (10.3333333333333 : 32.0208968098958 : JumpEnd); (11.375 : 32.0208968098958); (11.375 : 30.875); (11.5416666666667 : 30.875 : JumpStart); (11.8020833333333 : 30.875 : JumpEnd); (14.625 : 30.875); (14.625 : 30.7500005); (15 : 30.7500005)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_ListOfValue1" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="8385009b-4c68-4103-897d-c4e45362810f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.870113375 : 37.9054996744792); (0.870113375 : 43.0761539713542); (1.15201629166667 : 43.0761539713542 : JumpStart); (1.31868295833333 : 43.0761539713542 : JumpEnd); (1.51725204166667 : 43.0761539713542 : JumpStart); (1.68391870833333 : 43.0761539713542 : JumpEnd); (2.05680485416667 : 43.0761539713542 : JumpStart); (2.22347152083333 : 43.0761539713542 : JumpEnd); (2.23112191666667 : 43.0761539713542 : JumpStart); (2.39778858333333 : 43.0761539713542 : JumpEnd); (2.85416416666667 : 43.0761539713542 : JumpStart); (3.02083083333333 : 43.0761539713542 : JumpEnd); (5.72135791666667 : 43.0761539713542 : JumpStart); (5.88802458333333 : 43.0761539713542 : JumpEnd); (5.94791666666667 : 43.0761539713542 : JumpStart); (6.20833333333333 : 43.0761539713542 : JumpEnd); (11.9791666666667 : 43.0761539713542 : JumpStart); (12.1458333333333 : 43.0761539713542 : JumpEnd); (15 : 43.0761539713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SchemaData" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="a57f5c4d-53ec-4ae2-bac5-60f975ed8834" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.64648825 : 37.9054996744792); (2.64648825 : 43.0449014713542); (2.85416416666667 : 43.0449014713542 : JumpStart); (3.02083083333333 : 43.0449014713542 : JumpEnd); (15 : 43.0449014713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SchemaData1" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="a57f5c4d-53ec-4ae2-bac5-60f975ed8834" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 36.2576229186198); (2.85416416666667 : 36.2576229186198 : JumpStart); (3.02083083333333 : 36.2576229186198 : JumpEnd); (3.29166666666667 : 36.2576229186198 : JumpStart); (3.45833333333333 : 36.2576229186198 : JumpEnd); (3.625 : 36.2576229186198); (3.625 : 35.625); (5.76041666666667 : 35.625 : JumpStart); (5.92708333333333 : 35.625 : JumpEnd); (6.04166666666667 : 35.625 : JumpStart); (6.20833333333333 : 35.625 : JumpEnd); (6.25 : 35.625); (6.25 : 35.125); (6.35416666666667 : 35.125 : JumpStart); (6.52083333333333 : 35.125 : JumpEnd); (8.79166666666667 : 35.125 : JumpStart); (8.95833333333333 : 35.125 : JumpEnd); (9.04166666666667 : 35.125 : JumpStart); (9.27083333333333 : 35.125 : JumpEnd); (10.1666666666667 : 35.125 : JumpStart); (10.3333333333333 : 35.125 : JumpEnd); (11.5625 : 35.125); (11.5625 : 36.375); (11.5729166666667 : 36.375 : JumpStart); (11.8333333333333 : 36.375 : JumpEnd); (18.75 : 36.375); (18.75 : 34.8574039713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SchemaMetaData" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="f196630e-fbca-42a3-bf76-5a0d07219666" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 37.3978767558594); (2.85416416666667 : 37.3978767558594 : JumpStart); (3.02083083333333 : 37.3978767558594 : JumpEnd); (3.375 : 37.3978767558594); (3.375 : 35.75); (5.76041666666667 : 35.75 : JumpStart); (5.92708333333333 : 35.75 : JumpEnd); (6.125 : 35.75); (6.125 : 35.1875); (6.35416666666667 : 35.1875 : JumpStart); (6.52083333333333 : 35.1875 : JumpEnd); (9.04166666666667 : 35.1875 : JumpStart); (9.27083333333333 : 35.1875 : JumpEnd); (10.1666666666667 : 35.1875 : JumpStart); (10.3333333333333 : 35.1875 : JumpEnd); (11.4375 : 35.1875); (11.4375 : 36.375); (11.5729166666667 : 36.375 : JumpStart); (11.8333333333333 : 36.375 : JumpEnd); (18.218748 : 36.375); (18.218748 : 34.8574039713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SchemaMetaData1" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="f196630e-fbca-42a3-bf76-5a0d07219666" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 37.1128132965495); (2.85416416666667 : 37.1128132965495 : JumpStart); (3.02083083333333 : 37.1128132965495 : JumpEnd); (3.54166666666667 : 37.1128132965495 : JumpStart); (3.70833333333333 : 37.1128132965495 : JumpEnd); (3.75 : 37.1128132965495); (3.75 : 35.6875); (5.76041666666667 : 35.6875 : JumpStart); (5.92708333333333 : 35.6875 : JumpEnd); (6.4375 : 35.6875); (6.4375 : 35); (9.04166666666667 : 35 : JumpStart); (9.27083333333333 : 35 : JumpEnd); (11.5729166666667 : 35 : JumpStart); (11.7395833333333 : 35 : JumpEnd); (11.75 : 35); (11.75 : 36.5); (16 : 36.5); (16 : 36.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SchemaNote" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="464081a5-4616-4473-b379-7d9568351848" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.31445525 : 37.9054996744792); (2.31445525 : 43.515625); (2.85416416666667 : 43.515625 : JumpStart); (3.02083083333333 : 43.515625 : JumpEnd); (5.72135791666667 : 43.515625 : JumpStart); (5.88802458333333 : 43.515625 : JumpEnd); (5.94791666666667 : 43.515625 : JumpStart); (6.20833333333333 : 43.515625 : JumpEnd); (9.25 : 43.515625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SkuGroupData" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="063702d6-d0ec-41fb-b7c7-18a922c335ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.965821125 : 37.9054996744792); (1.965821125 : 42.4884439518229); (12.25 : 42.4884439518229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="5308231f-dc5b-4662-a3f9-807a333468d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.0527315 : 37.9054996744792); (1.0527315 : 38.8453597005208); (1.33463416666667 : 38.8453597005208 : JumpStart); (1.50130083333333 : 38.8453597005208 : JumpEnd); (1.88248779166667 : 38.8453597005208 : JumpStart); (2.04915445833333 : 38.8453597005208 : JumpEnd); (2.85416416666667 : 38.8453597005208 : JumpStart); (3.02083083333333 : 38.8453597005208 : JumpEnd); (12.25 : 38.8453597005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SkuLink" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="9fa8478a-4a53-41dc-b922-c56d741463f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.48047175 : 37.9054996744792); (2.48047175 : 38.9070548502604); (2.56315491666667 : 38.9070548502604 : JumpStart); (2.72982158333333 : 38.9070548502604 : JumpEnd); (2.85416416666667 : 38.9070548502604 : JumpStart); (3.02083083333333 : 38.9070548502604 : JumpEnd); (6.16666666666667 : 38.9070548502604 : JumpStart); (6.33333333333333 : 38.9070548502604 : JumpEnd); (8.66666666666667 : 38.9070548502604 : JumpStart); (8.83333333333333 : 38.9070548502604 : JumpEnd); (9.10416666666667 : 38.9070548502604 : JumpStart); (9.27083333333333 : 38.9070548502604 : JumpEnd); (11.5729166666667 : 38.9070548502604 : JumpStart); (11.7395833333333 : 38.9070548502604 : JumpEnd); (12.25 : 38.9070548502604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_SkuLink1" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="9fa8478a-4a53-41dc-b922-c56d741463f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.78320325 : 37.9054996744792); (1.78320325 : 38.4199039713542); (1.88248779166667 : 38.4199039713542 : JumpStart); (2.04915445833333 : 38.4199039713542 : JumpEnd); (2.56315491666667 : 38.4199039713542 : JumpStart); (2.72982158333333 : 38.4199039713542 : JumpEnd); (2.85416416666667 : 38.4199039713542 : JumpStart); (3.02083083333333 : 38.4199039713542 : JumpEnd); (5.76823041666667 : 38.4199039713542 : JumpStart); (5.93489708333333 : 38.4199039713542 : JumpEnd); (6.16666666666667 : 38.4199039713542 : JumpStart); (6.33333333333333 : 38.4199039713542 : JumpEnd); (6.5 : 38.4199039713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_TaxonomyData" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="06519fee-a042-4d84-aefc-a1789f307a04" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.67774075 : 37.9054996744792); (2.67774075 : 38.2227986067708); (2.85416416666667 : 38.2227986067708 : JumpStart); (3.02083083333333 : 38.2227986067708 : JumpEnd); (5.74479416666667 : 38.2227986067708 : JumpStart); (5.93489708333333 : 38.2227986067708 : JumpEnd); (6.16666666666667 : 38.2227986067708 : JumpStart); (6.45833333333333 : 38.2227986067708 : JumpEnd); (6.5 : 38.2227986067708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_TaxonomyData1" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="06519fee-a042-4d84-aefc-a1789f307a04" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.3749995 : 35.75); (2.3749995 : 32.3281275); (2.51041841666667 : 32.3281275 : JumpStart); (2.67708508333333 : 32.3281275 : JumpEnd); (2.85416416666667 : 32.3281275 : JumpStart); (3.02083083333333 : 32.3281275 : JumpEnd); (3.88541416666667 : 32.3281275 : JumpStart); (4.05208083333333 : 32.3281275 : JumpEnd); (4.41666666666667 : 32.3281275 : JumpStart); (4.58333333333333 : 32.3281275 : JumpEnd); (4.94791916666667 : 32.3281275 : JumpStart); (5.11458583333333 : 32.3281275 : JumpEnd); (5.57291666666667 : 32.3281275 : JumpStart); (5.95833333333333 : 32.3281275 : JumpEnd); (6.10416666666667 : 32.3281275 : JumpStart); (6.42708333333333 : 32.3281275 : JumpEnd); (6.5 : 32.3281275)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_TaxonomyNote" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="257d49fa-48d8-446e-8470-a4188dc8bfc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.8554671875 : 50.75); (4.8554671875 : 44.4142976888021); (5.94791666666667 : 44.4142976888021 : JumpStart); (6.20833333333333 : 44.4142976888021 : JumpEnd); (6.25 : 44.4142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_UserProject" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="1978b56e-6aea-4ecc-9461-189d5e7b45e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.9374975 : 28.4823225911458); (2.9374975 : 43.988396344401); (6.25 : 43.988396344401)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_UserProject" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="1978b56e-6aea-4ecc-9461-189d5e7b45e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.1401381875 : 37.9054996744792); (2.1401381875 : 44.9363497493489); (4.77213385416667 : 44.9363497493489 : JumpStart); (4.93880052083333 : 44.9363497493489 : JumpEnd); (5.72135791666667 : 44.9363497493489 : JumpStart); (5.88802458333333 : 44.9363497493489 : JumpEnd); (5.94791666666667 : 44.9363497493489 : JumpStart); (6.20833333333333 : 44.9363497493489 : JumpEnd); (6.25 : 44.9363497493489)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_UserProject" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="1978b56e-6aea-4ecc-9461-189d5e7b45e2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.95312125 : 50.75); (3.95312125 : 47.5200512695313); (6.25 : 47.5200512695313)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_SkuState" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="18463ea6-4bfc-49b8-b624-e31477544d63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.242186875 : 50.75); (5.242186875 : 48.1863289042969); (6.25 : 48.1863289042969)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_SkuState1" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="18463ea6-4bfc-49b8-b624-e31477544d63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12 : 46.34375); (8.25 : 46.34375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/State/State_SkuState" />
+      <nodes>
+        <classShapeMoniker Id="a036eb79-147a-4062-acdc-487e32a7e42b" />
+        <classShapeMoniker Id="18463ea6-4bfc-49b8-b624-e31477544d63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.210934375 : 50.75); (4.210934375 : 45.7628491210938); (4.77213385416667 : 45.7628491210938 : JumpStart); (4.93880052083333 : 45.7628491210938 : JumpEnd); (5.72135791666667 : 45.7628491210938 : JumpStart); (5.88802458333333 : 45.7628491210938 : JumpEnd); (5.94791666666667 : 45.7628491210938 : JumpStart); (6.20833333333333 : 45.7628491210938 : JumpEnd); (12 : 45.7628491210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_State" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="a036eb79-147a-4062-acdc-487e32a7e42b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 40.1763012695313); (12.0625 : 40.1763012695313); (12.0625 : 44.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Workflow/Workflow_State" />
+      <nodes>
+        <classShapeMoniker Id="56b1a431-272a-4449-a99a-15eadba4d6b9" />
+        <classShapeMoniker Id="a036eb79-147a-4062-acdc-487e32a7e42b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.49846153846154 : 50.75); (6.03125 : 50.2172115384615); (6.03125 : 39.9375025); (9.25 : 39.9375025)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Group/Group_Workflow" />
+      <nodes>
+        <classShapeMoniker Id="ddcee317-4d66-463b-b095-7fd1fb487a3a" />
+        <classShapeMoniker Id="56b1a431-272a-4449-a99a-15eadba4d6b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 28.4807831296074); (3.37653946153846 : 28.8573225911458); (4.30533582291667 : 28.8573225911458 : JumpStart); (4.47200248958333 : 28.8573225911458 : JumpEnd); (5.30729241666667 : 28.8573225911458 : JumpStart); (5.47395908333333 : 28.8573225911458 : JumpEnd); (5.76041666666667 : 28.8573225911458 : JumpStart); (5.92708333333333 : 28.8573225911458 : JumpEnd); (8.85416666666667 : 28.8573225911458 : JumpStart); (9.02083333333333 : 28.8573225911458 : JumpEnd); (9.1875 : 28.8573225911458); (9.1875 : 39.0625); (10.5546153846154 : 39.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_Workflow" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="56b1a431-272a-4449-a99a-15eadba4d6b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 37.6829402151693); (2.85416416666667 : 37.6829402151693 : JumpStart); (3.02083083333333 : 37.6829402151693 : JumpEnd); (3.375 : 37.6829402151693); (3.375 : 37.9631982421875); (3.54166666666667 : 37.9631982421875 : JumpStart); (3.70833333333333 : 37.9631982421875 : JumpEnd); (5.74479416666667 : 37.9631982421875 : JumpStart); (5.93489708333333 : 37.9631982421875 : JumpEnd); (6.375 : 37.9631982421875); (6.375 : 39.1266097005208); (8.66666666666667 : 39.1266097005208 : JumpStart); (8.83333333333333 : 39.1266097005208 : JumpEnd); (9 : 39.1266097005208); (9 : 38.6554996744792); (9.10416666666667 : 38.6554996744792 : JumpStart); (9.27083333333333 : 38.6554996744792 : JumpEnd); (9.7500005 : 38.6554996744792); (9.7500005 : 39.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_Workflow" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="56b1a431-272a-4449-a99a-15eadba4d6b9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fb419bfc-17b5-4595-aa68-82a825d8321b" absoluteBounds="3.5, 39, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SkuDataDbDataContext/CheckPointInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88dcf86f-31f6-4d86-923f-3b789fb7d7b0" absoluteBounds="3.5150000000000006, 39.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.96875 : 28.4823225911458); (2.96875 : 39.8854484049479); (3.5 : 39.8854484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_CheckPointInfo" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="fb419bfc-17b5-4595-aa68-82a825d8321b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.4179675 : 37.9054996744792); (1.4179675 : 39.411471702474); (1.88248779166667 : 39.411471702474 : JumpStart); (2.04915445833333 : 39.411471702474 : JumpEnd); (2.85416416666667 : 39.411471702474 : JumpStart); (3.02083083333333 : 39.411471702474 : JumpEnd); (3.5 : 39.411471702474)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_CheckPointInfo" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="fb419bfc-17b5-4595-aa68-82a825d8321b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" absoluteBounds="3.875, 35.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SkuDataDbDataContext/Sku" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f8b1ed0-64e9-42e7-9d3f-8b68ba9ccbc7" absoluteBounds="3.89, 36.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.65625 : 35.875); (5.65625 : 29.8469962565104); (5.76041666666667 : 29.8469962565104 : JumpStart); (5.92708333333333 : 29.8469962565104 : JumpEnd); (6.25 : 29.8469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Sku/Sku_EntityInfo" />
+      <nodes>
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+        <classShapeMoniker Id="4d17a229-9e4e-4306-ac1e-a0fd0ad511cc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.71875 : 37.8381982421875); (5.71875 : 41.9651990332031); (5.72135791666667 : 41.9651990332031 : JumpStart); (5.91146083333333 : 41.9651990332031 : JumpEnd); (5.94791666666667 : 41.9651990332031 : JumpStart); (6.20833333333333 : 41.9651990332031 : JumpEnd); (6.25 : 41.9651990332031)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Sku/Sku_SkuGroup" />
+      <nodes>
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+        <classShapeMoniker Id="af2dfafa-608a-437f-989b-c4c1f8091c74" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.8281275 : 37.8381982421875); (5.8281275 : 42.728224313151); (12.25 : 42.728224313151)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Sku/Sku_SkuInfo" />
+      <nodes>
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+        <classShapeMoniker Id="5308231f-dc5b-4662-a3f9-807a333468d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.6093725 : 37.8381982421875); (5.6093725 : 38.8762072753906); (5.74479416666667 : 38.8762072753906 : JumpStart); (5.91146083333333 : 38.8762072753906 : JumpEnd); (6.16666666666667 : 38.8762072753906 : JumpStart); (6.45833333333333 : 38.8762072753906 : JumpEnd); (8.66666666666667 : 38.8762072753906 : JumpStart); (8.83333333333333 : 38.8762072753906 : JumpEnd); (8.91666666666667 : 38.8762072753906 : JumpStart); (9.08333333333333 : 38.8762072753906 : JumpEnd); (9.10416666666667 : 38.8762072753906 : JumpStart); (9.27083333333333 : 38.8762072753906 : JumpEnd); (9.66666716666667 : 38.8762072753906 : JumpStart); (9.83333383333333 : 38.8762072753906 : JumpEnd); (11.5729166666667 : 38.8762072753906 : JumpStart); (11.7395833333333 : 38.8762072753906 : JumpEnd); (12.25 : 38.8762072753906)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Sku/Sku_SkuLink" />
+      <nodes>
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+        <classShapeMoniker Id="9fa8478a-4a53-41dc-b922-c56d741463f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.85156375 : 37.8381982421875); (5.85156375 : 38.8297347005208); (12.25 : 38.8297347005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Sku/Sku_SkuLink1" />
+      <nodes>
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+        <classShapeMoniker Id="9fa8478a-4a53-41dc-b922-c56d741463f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.80469125 : 37.8381982421875); (5.80469125 : 46.8537731347656); (5.94791666666667 : 46.8537731347656 : JumpStart); (6.20833333333333 : 46.8537731347656 : JumpEnd); (6.25 : 46.8537731347656)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Sku/Sku_SkuState" />
+      <nodes>
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+        <classShapeMoniker Id="18463ea6-4bfc-49b8-b624-e31477544d63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 24.3229484049479); (5.84375 : 24.3229484049479); (5.84375 : 35.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/Project/Project_Sku" />
+      <nodes>
+        <classShapeMoniker Id="5ba4568a-7b85-419a-95af-6a6821eeef36" />
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 36.5426863779297); (2.85416416666667 : 36.5426863779297 : JumpStart); (3.02083083333333 : 36.5426863779297 : JumpEnd); (3.29166666666667 : 36.5426863779297 : JumpStart); (3.45833333333333 : 36.5426863779297 : JumpEnd); (3.66666666666667 : 36.5426863779297 : JumpStart); (3.83333333333333 : 36.5426863779297 : JumpEnd); (3.875 : 36.5426863779297)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/User/User_Sku" />
+      <nodes>
+        <classShapeMoniker Id="10d449e7-b377-424d-bc0c-93feef9075e5" />
+        <classShapeMoniker Id="2b0bdb47-40cd-4aac-8459-3f55c9a6d033" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="30cb28de-d37c-4281-8403-9069ec5c38d7" absoluteBounds="9.5, 20.375, 2, 2.5401025390625">
+      <DataClassMoniker Name="/SkuDataDbDataContext/UnitOfMeasure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecda88fe-a794-4ea0-9bd4-cc0969fdd071" absoluteBounds="9.515, 20.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.5 : 21.5392976888021); (8.5 : 21.5392976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SkuDataDbDataContext/UnitOfMeasure/UnitOfMeasure_ProjectUom" />
+      <nodes>
+        <classShapeMoniker Id="30cb28de-d37c-4281-8403-9069ec5c38d7" />
+        <classShapeMoniker Id="8e0f139e-4256-418e-a151-579b1bddc57c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.2092307692308 : 22.9151025390625); (10.2092307692308 : 23.1651025390625); (10.8046153846154 : 23.1651025390625); (10.8046153846154 : 22.9151025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SkuDataDbDataContext/UnitOfMeasure/UnitOfMeasure_UnitOfMeasure" />
+      <nodes>
+        <classShapeMoniker Id="30cb28de-d37c-4281-8403-9069ec5c38d7" />
+        <classShapeMoniker Id="30cb28de-d37c-4281-8403-9069ec5c38d7" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
