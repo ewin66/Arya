@@ -13,18 +13,17 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>Resources\AryaLogo.ico</ApplicationIcon>
     <StartupObject>Arya.Program</StartupObject>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
     <TargetZone>Custom</TargetZone>
     <GenerateManifests>true</GenerateManifests>
-    <ManifestCertificateThumbprint>2A4ED7420507FD4598A1207F0252A855D7468F56</ManifestCertificateThumbprint>
-    <ManifestKeyFile>Arya_TemporaryKey.pfx</ManifestKeyFile>
-    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>28004C2C0FCEB0B21BB16F8056A22C9C51801AD4</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <SignManifests>true</SignManifests>
     <SignAssembly>false</SignAssembly>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Arya_1_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -37,9 +36,9 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\Arya3\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <CodeContractsAssemblyMode>0</CodeContractsAssemblyMode>
-    <PublishUrl>C:\Publish\Arya45\</PublishUrl>
-    <Install>false</Install>
-    <InstallFrom>Disk</InstallFrom>
+    <PublishUrl>C:\Publish\Arya\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Background</UpdateMode>
     <UpdateInterval>1</UpdateInterval>
@@ -47,14 +46,16 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <UpdateUrl>http://iris.codifyd.com/Arya45/</UpdateUrl>
-    <ProductName>Arya 4</ProductName>
-    <PublisherName>Codifyd</PublisherName>
+    <InstallUrl>http://dev.empirisense.com/AryaApp/</InstallUrl>
+    <ProductName>Arya</ProductName>
+    <PublisherName>empiriSense</PublisherName>
     <MinimumRequiredVersion>3.0.0.0</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>5.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <BootstrapperComponentsUrl>http://Arya.bytemanagers.com/AryaPrerequisites/</BootstrapperComponentsUrl>
@@ -191,9 +192,7 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
@@ -707,6 +706,7 @@
       <DependentUpon>RolesManagerControl.cs</DependentUpon>
     </Compile>
     <None Include="app.config" />
+    <None Include="Arya_1_TemporaryKey.pfx" />
     <None Include="Libraries\DataGridViewAutoFilter.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

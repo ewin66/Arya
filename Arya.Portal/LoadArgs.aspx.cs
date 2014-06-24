@@ -1,12 +1,4 @@
-﻿using DotNetOpenAuth.OpenId.Extensions.AttributeExchange;
-using Arya.Framework.Common;
-using Arya.Framework.Data;
-using Arya.Framework.Data.AryaDb;
-using Arya.Framework.IO;
-using Arya.Framework.IO.Imports;
-using Arya.Framework.Utility;
-using Polenter.Serialization;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -14,10 +6,15 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Text.RegularExpressions;
+using Arya.Framework.Common;
+using Arya.Framework.Data.AryaDb;
 using Arya.Framework.Extensions;
+using Arya.Framework.IO.Imports;
+using Arya.Framework.Utility;
+using Polenter.Serialization;
 
 namespace Arya.Portal
 {
@@ -33,8 +30,9 @@ namespace Arya.Portal
             {
                 if (_email == null)
                 {
-                    var response = Session["FetchResponse"] as FetchResponse;
-                    _email = response.GetAttributeValue(WellKnownAttributes.Contact.Email) ?? "N/A";
+                    //var response = Session["FetchResponse"] as FetchResponse;
+                    //_email = response.GetAttributeValue(WellKnownAttributes.Contact.Email) ?? "N/A";
+                    _email = HttpContext.Current.User.ToString();
                 }
                 return _email;
             }
@@ -49,11 +47,13 @@ namespace Arya.Portal
                 return _allFields;
             }
         }
+
         protected void Page_Init(object sender, EventArgs e)
         {
-            string descr = Session["Description"].ToString();
+            var descr = Session["Description"].ToString();
             txtProjectDesc.Text = descr;
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             GetAllFieldDelimiters();
@@ -61,10 +61,9 @@ namespace Arya.Portal
             LoadExistingImportFields();
             if (!Page.IsPostBack)
             {
-               string newDescription = txtProjectDesc.Text;
-               PopulateImportOptions();
+                var newDescription = txtProjectDesc.Text;
+                PopulateImportOptions();
             }
-          
         }
 
         protected void DisplayProjectList()
@@ -73,8 +72,8 @@ namespace Arya.Portal
             using (var Dc = new AryaDbDataContext())
             {
                 var currUser = (from u in Dc.Users
-                                where u.EmailAddress == Email
-                                select u).Single();
+                    where u.EmailAddress == Email
+                    select u).Single();
                 var currentUserID = currUser.ID;
                 var currentUserName = currUser.FullName;
                 var userRole = currUser.IsAdmin;
@@ -85,27 +84,29 @@ namespace Arya.Portal
                 if (!userRole)
                 {
                     var projects = (from ug in currUser.UserProjects
-                                    where
-                                        ug.GroupID == Arya.Framework.Data.AryaDb.Group.ImportAdminGroup
-                                        ||
-                                        ug.GroupID == Arya.Framework.Data.AryaDb.Group.ImportUserGroup
-                                        && existingDatabases.Contains(ug.Project.DatabaseName)
-                                    orderby ug.Project.DatabaseName ascending
-                                    select ug.Project).Distinct();
+                        where
+                            ug.GroupID == Group.ImportAdminGroup
+                            ||
+                            ug.GroupID == Group.ImportUserGroup
+                            && existingDatabases.Contains(ug.Project.DatabaseName)
+                        orderby ug.Project.DatabaseName ascending
+                        select ug.Project).Distinct();
                     availableProjects =
                         projects.Select(p => new ListItem {Text = p.ClientDescription + " " + p.SetName}).ToList();
                 }
                 else
                 {
                     var projects = (from p in Dc.Projects
-                                    where existingDatabases.Contains(p.DatabaseName)
-                                    orderby p.DatabaseName ascending
-                                    select p);
-                    availableProjects = projects.Select(p => new ListItem { Text = p.ClientDescription + " " + p.SetName }).Distinct().ToList();
+                        where existingDatabases.Contains(p.DatabaseName)
+                        orderby p.DatabaseName ascending
+                        select p);
+                    availableProjects =
+                        projects.Select(p => new ListItem {Text = p.ClientDescription + " " + p.SetName})
+                            .Distinct()
+                            .ToList();
                 }
                 ddlProject.Items.Insert(0, "Select a Project");
                 availableProjects.ForEach(ap => ddlProject.Items.Add(ap));
-               
             }
         }
 
@@ -120,8 +121,8 @@ namespace Arya.Portal
         {
             var allImports = ImportWorkerBase.GetAvailableImports();
             var fields =
-                allImports.SelectMany(i => Enumerable.AsEnumerable(i.GetRequiredFields())).Union(
-                    allImports.SelectMany(i => Enumerable.AsEnumerable(i.GetOptionalFields())));
+                allImports.SelectMany(i => i.GetRequiredFields().AsEnumerable()).Union(
+                    allImports.SelectMany(i => i.GetOptionalFields().AsEnumerable()));
 
             var allFields = fields.Distinct().OrderBy(a => a).ToList();
             allFields.Insert(0, "_ignore_");
@@ -130,17 +131,16 @@ namespace Arya.Portal
 
         protected void LoadExistingImportFields()
         {
-            string connStr = Arya.Framework.Utility.Util.GetAryaServicesConnectionString();
-            SqlConnection sqlConnection = new SqlConnection(connStr);
-            string basepath = ConfigurationManager.AppSettings["BasePath"].ToString();
-            var id = Request.QueryString["ID"].ToString();
-            var projectID = Request.QueryString["ProjectID"].ToString();
+            var connStr = Util.GetAryaServicesConnectionString();
+            var sqlConnection = new SqlConnection(connStr);
+            var basepath = ConfigurationManager.AppSettings["BasePath"];
+            var id = Request.QueryString["ID"];
+            var projectID = Request.QueryString["ProjectID"];
             using (var Dc = new AryaDbDataContext())
             {
-
                 var projectName = (from p in Dc.Projects
-                                   where p.ID == Guid.Parse(projectID)
-                                   select p.ClientDescription + ' ' + p.SetName).Single();
+                    where p.ID == Guid.Parse(projectID)
+                    select p.ClientDescription + ' ' + p.SetName).Single();
                 ddlProject.SelectedItem.Text = projectName;
             }
             projectId.Value = projectID;
@@ -150,7 +150,7 @@ namespace Arya.Portal
             cmd1.CommandText = "Select ArgumentDirectoryPath from AryaTask Where ID= @id";
             cmd1.CommandType = CommandType.Text;
             cmd1.Parameters.Add("@ID", SqlDbType.UniqueIdentifier).Value = Guid.Parse(id);
-           //cmd1.Parameters.Add("@Description", SqlDbType.VarChar).Value = description;
+            //cmd1.Parameters.Add("@Description", SqlDbType.VarChar).Value = description;
             sqlConnection.Close();
             cmd1.Connection = sqlConnection;
             sqlConnection.Open();
@@ -159,8 +159,8 @@ namespace Arya.Portal
             var ArgumentDirectoryPath = Path.Combine(path, WorkerArguments.ArgumentsFileName);
             ReadDataFromXMLFile(ArgumentDirectoryPath);
             sqlConnection.Close();
-          }
-     
+        }
+
         private void ReadHeaderFromFile(string filePath)
         {
             using (var reader = new StreamReader(filePath, Encoding.UTF8))
@@ -168,7 +168,7 @@ namespace Arya.Portal
                 var line = reader.ReadLine();
                 var parts = line.Split('\t');
                 gv_Fields.DataSource = (from p in parts
-                                        select new {HeaderColumn = p, MappingFields = AllFields}).ToList();
+                    select new {HeaderColumn = p, MappingFields = AllFields}).ToList();
                 gv_Fields.DataBind();
                 reader.Close();
             }
@@ -176,7 +176,7 @@ namespace Arya.Portal
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
-            string newDescription = txtProjectDesc.Text;
+            var newDescription = txtProjectDesc.Text;
             if (!inputFileUpload.HasFile)
             {
                 lblUploadResult.Text = "Click 'Browse' to select the file to upload.";
@@ -258,33 +258,33 @@ namespace Arya.Portal
                 switch (i.Trim())
                 {
                     case "CreateMissingSkus":
-                         chkBoxImportType.Items.FindByValue(i.ToString()).Selected = true;
-                         break;
+                        chkBoxImportType.Items.FindByValue(i).Selected = true;
+                        break;
 
                     case "CreateMissingTaxonomies":
-                         chkBoxImportType.Items.FindByValue(i.ToString()).Selected = true;
-                         break;
+                        chkBoxImportType.Items.FindByValue(i).Selected = true;
+                        break;
 
                     case "CreateMissingAttributes":
-                         chkBoxImportType.Items.FindByValue(i.ToString()).Selected = true;
+                        chkBoxImportType.Items.FindByValue(i).Selected = true;
                         break;
 
                     case "CreateMissingMetaAttributes":
-                        chkBoxImportType.Items.FindByValue(i.ToString()).Selected = true;
+                        chkBoxImportType.Items.FindByValue(i).Selected = true;
                         break;
 
                     case "CreateMissingValues":
-                        chkBoxImportType.Items.FindByValue(i.ToString()).Selected = true;
+                        chkBoxImportType.Items.FindByValue(i).Selected = true;
                         break;
                 }
             }
-           
+
             dict = importArgs.FieldMappings;
         }
 
         protected void InsertIntoTable()
         {
-            var connStr = Arya.Framework.Utility.Util.GetAryaServicesConnectionString();
+            var connStr = Util.GetAryaServicesConnectionString();
             var sqlConnection = new SqlConnection(connStr);
             var @status = "New";
             var @submittedBy = Guid.Parse(userId.Value);
@@ -316,9 +316,9 @@ namespace Arya.Portal
 
         private void PopulateImportOptions()
         {
-            foreach (ImportOptions io in Enum.GetValues(typeof(ImportOptions)))
+            foreach (ImportOptions io in Enum.GetValues(typeof (ImportOptions)))
             {
-                if(io == ImportOptions.None || io == ImportOptions.CreateMissingMetaAttributes)
+                if (io == ImportOptions.None || io == ImportOptions.CreateMissingMetaAttributes)
                     continue;
                 chkBoxImportType.Items.Add(new ListItem(io.ToString(), io.ToString()));
             }
@@ -329,7 +329,7 @@ namespace Arya.Portal
             foreach (ListItem chk in chkBoxImportType.Items)
             {
                 if (chk.Selected)
-                    io = io | (ImportOptions)Enum.Parse(typeof(ImportOptions), chk.Value);
+                    io = io | (ImportOptions) Enum.Parse(typeof (ImportOptions), chk.Value);
             }
             return io;
         }
@@ -369,8 +369,8 @@ namespace Arya.Portal
             ia.CurrentImportOptions = io;
 
             var iaFileName = Path.Combine(new FileInfo(inputFileLocation.Value).Directory.FullName,
-                                          WorkerArguments.ArgumentsFileName);
-            var settings = ia.GetSharpSerializerXmlSettings(ImportArgs.ArgumentsFileRootName);
+                WorkerArguments.ArgumentsFileName);
+            var settings = ia.GetSharpSerializerXmlSettings(WorkerArguments.ArgumentsFileRootName);
             var serializer = new SharpSerializer(settings);
             serializer.Serialize(ia, iaFileName);
             importArgs.Value = iaFileName;
@@ -382,6 +382,5 @@ namespace Arya.Portal
             InsertIntoTable();
             Response.Redirect("ImportStatus.aspx?ProjectID=" + projectId.Value, false);
         }
-
     }
 }

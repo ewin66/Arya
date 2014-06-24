@@ -1,4 +1,6 @@
-﻿namespace Arya.Portal
+﻿using System.Web;
+
+namespace Arya.Portal
 {
     using System;
     using System.Collections.Generic;
@@ -6,8 +8,6 @@
     using System.Web.Security;
     using System.Web.UI;
     using System.Web.UI.WebControls;
-
-    using DotNetOpenAuth.OpenId.Extensions.AttributeExchange;
 
     using Arya.Framework.Common;
     using Arya.Framework.Common.ComponentModel;
@@ -94,12 +94,7 @@
         {
             get
             {
-                if (_email == null)
-                {
-                    var response = Session["FetchResponse"] as FetchResponse;
-                    _email = response.GetAttributeValue(WellKnownAttributes.Contact.Email) ?? "N/A";
-                }
-                return _email;
+                return Session["email"].ToString();
             }
         }
 
@@ -169,8 +164,7 @@
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var response = Session["FetchResponse"] as FetchResponse;
-            if (response == null)
+            if (!HttpContext.Current.User.Identity.IsAuthenticated || Session["email"] == null)
             {
                 FormsAuthentication.RedirectToLoginPage();
                 return;
@@ -207,7 +201,12 @@
         {
             using (var aryaDc = new AryaDbDataContext())
             {
-                var currUser = (from u in aryaDc.Users where u.EmailAddress == Email select u).Single();
+                var currUser = (from u in aryaDc.Users where u.EmailAddress == Email select u).FirstOrDefault();
+                if (currUser == null)
+                {
+                    FormsAuthentication.RedirectToLoginPage();
+                    return;
+                }
 
                 using (var taskDc = new AryaServicesDbDataContext())
                 {

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AryaPortal.Account {
+namespace Arya.Portal.Account {
     
     
     public partial class Logout {

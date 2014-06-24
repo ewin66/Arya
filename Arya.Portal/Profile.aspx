@@ -53,13 +53,17 @@
                     </label>
                     <label id="lblFullNameValue" class="label2">
                         <%= FullName %></label></p>
-                <p>
+                <%--<p>
                     <label id="lblSsoIdAtt" class="label">
                         ID:
                     </label>
                     <label id="lblSsoIdValue" class="label2">
-                        <%= SsoId %></label></p>
+                        <%= SsoId %></label></p>--%>
             </div>
         </fieldset>
+        
+       <p>
+           <a href="http://dev.empirisense.com/AryaApp/setup.exe">Download Arya</a>
+       </p>
     </div>
 </asp:Content>

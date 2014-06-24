@@ -1,4 +1,6 @@
-﻿namespace Arya.Portal
+﻿using System.Web;
+
+namespace Arya.Portal
 {
     using System;
     using System.Collections.Generic;
@@ -10,8 +12,6 @@
     using System.Web.Security;
     using System.Web.UI;
     using System.Web.UI.WebControls;
-
-    using DotNetOpenAuth.OpenId.Extensions.AttributeExchange;
 
     using Arya.Framework.Common;
     using Arya.Framework.Data.AryaDb;
@@ -376,8 +376,7 @@
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            var response = Session["FetchResponse"] as FetchResponse;
-            if (response == null)
+            if (!HttpContext.Current.User.Identity.IsAuthenticated && Session["email"]!=null)
             {
                 //This should never be called!
                 FormsAuthentication.RedirectToLoginPage();

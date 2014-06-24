@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Arya4")]
-[assembly: AssemblyDescription("Taxonomy, Schema and Attribute Normalization Tool")]
+[assembly: AssemblyTitle("Arya")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("empiriSense, Inc.")]
 [assembly: AssemblyProduct("Arya")]
-[assembly: AssemblyCopyright("Copyright © empiriSense 2010-2014")]
+[assembly: AssemblyCopyright("Copyright © empiriSense 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("5afa2ae0-296a-431b-8c54-0e23812b4229")]
+[assembly: Guid("9394565e-efe2-4908-ad82-e5a401e458d4")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -35,5 +35,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("4.5.0.0")]
-[assembly: AssemblyFileVersion("4.5.0.0")]
+[assembly: AssemblyVersion("5.0.0.0")]
+[assembly: AssemblyFileVersion("5.0.0.0")]

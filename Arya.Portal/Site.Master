@@ -43,10 +43,6 @@
                             <asp:MenuItem NavigateUrl="~/Import.aspx" Text="Import" />
                             <asp:MenuItem NavigateUrl="~/Export.aspx" Text="Export" />
                             <asp:MenuItem NavigateUrl="~/Status.aspx" Text="Job Status" />
-                            <asp:MenuItem NavigateUrl="~/WebView.aspx" Text="Web View" />
-
-                            <%--<asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
-                        <asp:MenuItem NavigateUrl="~/Profile.aspx" Text="Profile"/>--%>
                         </Items>
                     </asp:Menu>
                 </div>

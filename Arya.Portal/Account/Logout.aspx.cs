@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AryaPortal.Account
+namespace Arya.Portal.Account
 {
     public partial class Logout : System.Web.UI.Page
     {

@@ -7,28 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AryaPortal.Account {
+namespace Arya.Portal.Account {
     
     
     public partial class Login {
         
         /// <summary>
-        /// loginFailedLabel control.
+        /// Login1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label loginFailedLabel;
-        
-        /// <summary>
-        /// loginCanceledLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label loginCanceledLabel;
+        protected global::System.Web.UI.WebControls.Login Login1;
         
         /// <summary>
         /// Master property.
